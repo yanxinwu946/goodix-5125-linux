@@ -1,0 +1,1123 @@
+[0508-09:44:54:108][PID:3720][TID:03600][GFDrv][info][InitLogOutput:00237] Goodix>>> WBDI Build Dec 10 2020 16:16:52, LogTarget 1, LogLevel 9, LogPath C:\ProgramData\Goodix\WBDI.log
+[0508-09:44:54:108][PID:3720][TID:03600][GFDrv][debug][GetPowerInformation:00420] Goodix>>> PowerCapability::0x01000000000000010001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+[0508-09:44:54:113][PID:3720][TID:03600][GFDrv][debug][GetPowerInformation:00422] Goodix>>> supports Modern Standby: No
+[0508-09:44:54:113][PID:3720][TID:03600][GFDrv][info][DriverEntry:00109] Goodix>>> Driver Entry Traditional S3
+[0508-09:44:54:113][PID:3720][TID:03600][GFDrv][debug][DriverEntry:00123] Goodix>>> before WdfDriverCreate
+[0508-09:44:54:116][PID:3720][TID:03600][GFDrv][debug][StartSessionDetection:00154] Goodix>>> session thread enter
+[0508-09:44:54:116][PID:3720][TID:03600][GFDrv][info][DriverEntry:00145] Goodix>>> exit
+[0508-09:44:54:116][PID:3720][TID:04152][GFDrv][info][PowerNotificationCallback:00452] Goodix>>> display state 0x1(0x2-dim/0x1-on/0x0-off)
+[0508-09:44:54:116][PID:3720][TID:02428][GFDrv][info][sessionThread:00102] Goodix>>> UNLOCK to clear pov data right away
+[0508-09:44:54:116][PID:3720][TID:02428][GFDrv][warn][ClearPOVImage:03857] Goodix>>> no pov data
+[0508-09:44:54:121][PID:3720][TID:03600][GFDrv][debug][milanFusbEvtDeviceAdd:00176] Goodix>>> Entry
+[0508-09:44:54:121][PID:3720][TID:03600][GFDrv][info][milanFusbCreateDevice:01312] Goodix>>> enter
+[0508-09:44:54:121][PID:3720][TID:03600][GFDrv][info][GetCurrentFingerprintHardwareID:01212] Goodix>>> enter
+[0508-09:44:54:121][PID:3720][TID:03600][GFDrv][info][GetCurrentFingerprintHardwareID:01234] Goodix>>> HardwareID: USB\VID_27C6&PID_5110&REV_0200
+[0508-09:44:54:121][PID:3720][TID:03600][GFDrv][info][GetCurrentFingerprintHardwareID:01271] Goodix>>> HardwareID match for product 2, USB\VID_27C6&PID_5110
+[0508-09:44:54:124][PID:3720][TID:03600][GFDrv][debug][milanFusbCreateDevice:01352] Goodix>>> to support disable and enable
+[0508-09:44:54:125][PID:3720][TID:03600][GFDrv][debug][milanFusbCreateDevice:01362] Goodix>>> support S0Idle
+[0508-09:44:54:125][PID:3720][TID:03600][GFDrv][debug][milanFusbCreateDevice:01367] Goodix>>> S0Idle: 10s, switch 0
+[0508-09:44:54:125][PID:3720][TID:03600][GFDrv][info][milanFusbQueueInitialize:00074] Goodix>>> PowerManaged:TRUE
+[0508-09:44:54:125][PID:3720][TID:03600][GFDrv][info][milanFusbCreateDevice:01557] Goodix>>> exit, status: 0x0
+[0508-09:44:54:125][PID:3720][TID:03600][GFDrv][debug][milanFusbEvtDeviceAdd:00178] Goodix>>> Exit
+[0508-09:44:54:125][PID:3720][TID:03600][GFDrv][info][MilanEvtDevicePrepareHardware:03726] Goodix>>> enter, driver version:1.1.124.12
+[0508-09:44:54:173][PID:3720][TID:03600][GFDrv][debug][MilanEvtDevicePrepareHardware:03751] Goodix>>> deviceInfo.Traits:0x1
+[0508-09:44:54:173][PID:3720][TID:03600][GFDrv][debug][SelectInterfaces:03668] Goodix>>> PipeType:0x4
+[0508-09:44:54:173][PID:3720][TID:03600][GFDrv][debug][SelectInterfaces:03668] Goodix>>> PipeType:0x3
+[0508-09:44:54:173][PID:3720][TID:03600][GFDrv][debug][SelectInterfaces:03668] Goodix>>> PipeType:0x3
+[0508-09:44:54:173][PID:3720][TID:03600][GFDrv][info][MilanEvtDevicePrepareHardware:03801] Goodix>>> WdfUsbTargetDeviceGetIoTarget success
+[0508-09:44:54:173][PID:3720][TID:03600][GFDrv][info][_init_global_hal_context:00271] Goodix>>> enter
+[0508-09:44:54:178][PID:3720][TID:06120][GFDrv][info][device_data_analyze:01773] Goodix>>> --- start
+[0508-09:44:54:178][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01791] Goodix>>> --- g_halcontext.mode = 0xe
+[0508-09:44:54:182][PID:3720][TID:03600][GFDrv][info][startDataAnalyzeMonitoring:01988] Goodix>>> Resume Thread device_fdtdata_analyze
+[0508-09:44:54:182][PID:3720][TID:04180][GFDrv][info][device_fdtdata_analyze:06081] Goodix>>> --- start
+[0508-09:44:54:182][PID:3720][TID:04180][GFDrv][debug][device_fdtdata_analyze:06102] Goodix>>> device_fdtdata_analyze
+[0508-09:44:54:198][PID:3720][TID:03600][GFDrv][info][startfdtDataAnalyzeMonitoring:06327] Goodix>>> Resume Thread device_fdtdata_analyze
+[0508-09:44:54:198][PID:3720][TID:03600][GFDrv][info][_init_global_hal_context:00334] Goodix>>> exit 1
+[0508-09:44:54:198][PID:3720][TID:03600][GFDrv][debug][MilanEvtDevicePrepareHardware:03818] Goodix>>> exit, status: 0x0, bret:1 
+[0508-09:44:54:201][PID:3720][TID:03600][GFDrv][info][MilanEvtDeviceD0Entry:03847] Goodix>>> entry, prev state: 5(4-D3,5-D3Final), power action: 0, driver version 1.1.124.12
+[0508-09:44:54:201][PID:3720][TID:03600][GFDrv][debug][MilanEvtDeviceD0Entry:03855] Goodix>>> start readpipe!!!
+[0508-09:44:54:201][PID:3720][TID:03600][GFDrv][debug][_StartInitThread:04805] Goodix>>> enter
+[0508-09:44:54:201][PID:3720][TID:03600][GFDrv][debug][_StopInitThread:04776] Goodix>>> enter
+[0508-09:44:54:201][PID:3720][TID:03600][GFDrv][info][_StartInitThread:04814] Goodix>>> to create init thread
+[0508-09:44:54:210][PID:3720][TID:03600][GFDrv][debug][_StartInitThread:04823] Goodix>>> exit
+[0508-09:44:54:210][PID:3720][TID:04188][GFDrv][info][InitThread:00942] Goodix>>> --- Init: start
+[0508-09:44:54:210][PID:3720][TID:04188][GFDrv][debug][InitThread:00956] Goodix>>> Init: CONFIG DATA: time_wait_for_tls 1100, time_wait_for_pov 2000, retry_count_for_common_init 3
+[0508-09:44:54:210][PID:3720][TID:04188][GFDrv][debug][_DeviceInit:00539] Goodix>>> CONFIG DATA: hard_coded_chipid_switch 0
+[0508-09:44:54:210][PID:3720][TID:04188][GFDrv][info][_DeviceInit:00541] Goodix>>> ---- enter
+[0508-09:44:54:210][PID:3720][TID:04188][GFDrv][info][_DeviceInit:00552] Goodix>>> [BEGIN] _DeviceInit
+[0508-09:44:54:210][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 0 to 1
+[0508-09:44:54:210][PID:3720][TID:04188][GFDrv][debug][send_driver_install_to_MCU:01455] Goodix>>> DriverState:Install
+[0508-09:44:54:210][PID:3720][TID:03600][GFDrv][info][MilanEvtDeviceD0Entry:03917] Goodix>>> exit
+[0508-09:44:54:210][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x0-0-0x4-0(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:210][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02244] Goodix>>> !!not to wait for ack
+[0508-09:44:54:219][PID:3720][TID:03420][GFDrv][debug][OnGetAttributes:01621] Goodix>>> entry
+[0508-09:44:54:220][PID:3720][TID:03420][GFDrv][debug][OnGetAttributes:01667] Goodix>>> outputBufferSize:0x62c, struct size:0x62c
+[0508-09:44:54:220][PID:3720][TID:03420][GFDrv][debug][OnGetAttributes:01704] Goodix>>> exit
+[0508-09:44:54:238][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x9-3-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:239][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x96 0x1
+[0508-09:44:54:239][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:239][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x96
+[0508-09:44:54:239][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:258][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:258][PID:3720][TID:04188][GFDrv][debug][device_action:02573] Goodix>>> to set state to DEVICE_ACTION
+[0508-09:44:54:259][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 1 to 3
+[0508-09:44:54:259][PID:3720][TID:04188][GFDrv][debug][device_action:02745] Goodix>>> besdenable:0
+[0508-09:44:54:259][PID:3720][TID:04188][GFDrv][debug][device_action:02822] Goodix>>> to set state to DEVICE_ENABLE
+[0508-09:44:54:259][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 3 to 1
+[0508-09:44:54:259][PID:3720][TID:04188][GFDrv][info][init_MCU:01274] Goodix>>> enter
+[0508-09:44:54:259][PID:3720][TID:04188][GFDrv][debug][init_MCU:01289] Goodix>>> CONFIG DATA: retry_count_for_common_init 3
+[0508-09:44:54:259][PID:3720][TID:04188][GFDrv][info][GetEvkVersionWithRetry:01225] Goodix>>> Get Evk Version...retry count 3
+[0508-09:44:54:259][PID:3720][TID:04188][GFDrv][debug][GetEvkVersion:04099] Goodix>>> enter
+[0508-09:44:54:259][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x0-0-0x4-0(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:259][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02244] Goodix>>> !!not to wait for ack
+[0508-09:44:54:278][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0xa-4-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:279][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0xa8 0x1
+[0508-09:44:54:279][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:279][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0xa8
+[0508-09:44:54:279][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:279][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 26, checksum: 0xba and first 5 bytes: 0xa8 0x17 0x0 0x47 0x46
+[0508-09:44:54:279][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xa-0x4-0x0-23
+[0508-09:44:54:279][PID:3720][TID:04152][GFDrv][debug][data_from_device:03463] Goodix>>> --- cmd: other
+[0508-09:44:54:297][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:297][PID:3720][TID:04188][GFDrv][info][GetEvkVersion:04129] Goodix>>> got evk version: GF_ST411SEC_APP_12117
+[0508-09:44:54:298][PID:3720][TID:04188][GFDrv][debug][init_MCU:01304] Goodix>>> production process...
+[0508-09:44:54:298][PID:3720][TID:04188][GFDrv][debug][production_psk_process:01954] Goodix>>> Entry
+[0508-09:44:54:298][PID:3720][TID:04188][GFDrv][debug][production_psk_process:01963] Goodix>>> . check psk if valid (total times:2)
+[0508-09:44:54:298][PID:3720][TID:04188][GFDrv][debug][production_psk_process:01966] Goodix>>> check psk times: 1
+[0508-09:44:54:298][PID:3720][TID:04188][GFDrv][debug][production_check_psk_is_valid:02944] Goodix>>> entry
+[0508-09:44:54:298][PID:3720][TID:04188][GFDrv][debug][production_check_psk_is_valid:02963] Goodix>>> 1.get host hash
+[0508-09:44:54:298][PID:3720][TID:04188][GFDrv][debug][production_get_host_psk_data:02792] Goodix>>> entry
+[0508-09:44:54:298][PID:3720][TID:04188][GFDrv][debug][production_get_host_psk_data:02818] Goodix>>> .get seal data
+[0508-09:44:54:298][PID:3720][TID:04188][GFDrv][debug][production_get_host_psk_data:02823] Goodix>>> read 332 bytes
+[0508-09:44:54:298][PID:3720][TID:04188][GFDrv][info][generate_entropy2:02121] Goodix>>> generate rootkey
+[0508-09:44:54:298][PID:3720][TID:04188][GFDrv][info][gf_unseal_data:00102] Goodix>>> inbuf_len 324, entropy_len 48, len_out 32
+[0508-09:44:54:309][PID:3720][TID:04188][GFDrv][debug][gf_unseal_data:00129] Goodix>>> The decryption phase worked, 324, 32
+[0508-09:44:54:309][PID:3720][TID:04188][GFDrv][debug][production_get_host_psk_data:02849] Goodix>>> unseal return 0x0 length before 324, length after:32
+[0508-09:44:54:309][PID:3720][TID:04188][GFDrv][debug][production_get_host_psk_data:02913] Goodix>>> .wb data 
+[0508-09:44:54:309][PID:3720][TID:04188][GFDrv][debug][production_get_host_psk_data:02915] Goodix>>> wb return 0x0 length before 32, length after:96 
+[0508-09:44:54:320][PID:3720][TID:04188][GFDrv][debug][production_get_host_psk_data:02924] Goodix>>> .hash
+[0508-09:44:54:320][PID:3720][TID:04188][GFDrv][debug][production_get_host_psk_data:02927] Goodix>>> hash return 0x0 length before 96, length after:32
+[0508-09:44:54:320][PID:3720][TID:04188][GFDrv][debug][production_get_host_psk_data:02936] Goodix>>> exit with 0x0
+[0508-09:44:54:320][PID:3720][TID:04188][GFDrv][debug][production_check_psk_is_valid:02965] Goodix>>> ret 0x0, psk len 32, hash len 32, seal len 332, data from file flag 1 
+[0508-09:44:54:320][PID:3720][TID:04188][GFDrv][debug][production_check_psk_is_valid:02973] Goodix>>> 2.get mcu hash
+[0508-09:44:54:320][PID:3720][TID:03420][GFDrv][debug][OnGetSensorInfo:02511] Goodix>>> Entry
+[0508-09:44:54:320][PID:3720][TID:04188][GFDrv][debug][production_read_specific_data:03017] Goodix>>> Entry 
+[0508-09:44:54:320][PID:3720][TID:04188][GFDrv][debug][production_read_specific_data:03031] Goodix>>> 0.read specific data_type 0xbb020003 
+[0508-09:44:54:320][PID:3720][TID:04188][GFDrv][debug][production_read_specific_data:03036] Goodix>>> 2.read data from mcu
+[0508-09:44:54:320][PID:3720][TID:04188][GFDrv][debug][production_read_mcu:02432] Goodix>>> Entry
+[0508-09:44:54:320][PID:3720][TID:04188][GFDrv][debug][production_read_mcu:02443] Goodix>>> 1.SpiSendDataToDeviceLock
+[0508-09:44:54:320][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0xe-2-0x8-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:327][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0xe4 0x1
+[0508-09:44:54:328][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:328][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0xe4
+[0508-09:44:54:328][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:328][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 45, checksum: 0xcd and first 5 bytes: 0xe4 0x2a 0x0 0x0 0x3
+[0508-09:44:54:328][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xe-0x2-0x0-42
+[0508-09:44:54:333][PID:3720][TID:04152][GFDrv][debug][data_from_device:03488] Goodix>>> --- Received USB_CMD0_PRODUCTION response
+[0508-09:44:54:333][PID:3720][TID:04152][GFDrv][debug][data_from_device:03492] Goodix>>> USB_CMD0_PRODUCTION response pure data length=41
+[0508-09:44:54:357][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:357][PID:3720][TID:04188][GFDrv][debug][production_read_mcu:02473] Goodix>>> 2.parse return data
+[0508-09:44:54:358][PID:3720][TID:04188][GFDrv][info][production_read_mcu:02478] Goodix>>> return data, len_payload_mcu  41 bytes, passed 2048 bytes, result 0.
+[0508-09:44:54:358][PID:3720][TID:04188][GFDrv][debug][production_read_mcu:02500] Goodix>>> read from mcu done, copy 40 bytes back 
+[0508-09:44:54:358][PID:3720][TID:04188][GFDrv][debug][production_read_mcu:02516] Goodix>>> Exit ret:0x0.
+[0508-09:44:54:366][PID:3720][TID:04188][GFDrv][debug][production_read_specific_data:03039] Goodix>>> read data from mcu ret:0x0, length: 40
+[0508-09:44:54:366][PID:3720][TID:04188][GFDrv][debug][production_read_specific_data:03055] Goodix>>> Exit with 0x0
+[0508-09:44:54:366][PID:3720][TID:04188][GFDrv][debug][production_check_psk_is_valid:02976] Goodix>>> get mcu hash, ret 0x0, len 32
+[0508-09:44:54:366][PID:3720][TID:04188][GFDrv][debug][production_check_psk_is_valid:02985] Goodix>>> 3.verify
+[0508-09:44:54:369][PID:3720][TID:04188][GFDrv][info][production_check_psk_is_valid:02997] Goodix>>> !!!hash equal !!! 
+[0508-09:44:54:369][PID:3720][TID:04188][GFDrv][debug][production_check_psk_is_valid:03010] Goodix>>> exit with 0x0
+[0508-09:44:54:369][PID:3720][TID:04188][GFDrv][debug][production_psk_process:01974] Goodix>>> check psk: psk is valid!
+[0508-09:44:54:369][PID:3720][TID:04188][GFDrv][debug][production_psk_process:02036] Goodix>>> Exit ret:0x0
+[0508-09:44:54:369][PID:3720][TID:04188][GFDrv][info][init_MCU:01315] Goodix>>> Production Process...Success!
+[0508-09:44:54:369][PID:3720][TID:04188][GFDrv][error][init_MCU:01335] Goodix>>> !!!3658:Update firmware
+[0508-09:44:54:369][PID:3720][TID:04188][GFDrv][info][gdx_UpdateFirmware_LockState:04596] Goodix>>> =>
+[0508-09:44:54:369][PID:3720][TID:04188][GFDrv][debug][gdx_UpdateFirmware_LockState:04599] Goodix>>> current state is 1, to set state to DEVICE_UPDATE
+[0508-09:44:54:369][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 1 to 4
+[0508-09:44:54:369][PID:3720][TID:04188][GFDrv][debug][gfUpdatefirmware:04631] Goodix>>> CONFIG DATA: firmware_update_switch 1, retry_count_for_common_init 3
+[0508-09:44:54:375][PID:3720][TID:04188][GFDrv][info][gfUpdatefirmware:04651] Goodix>>> Nowversion len21 :GF_ST411SEC_APP_12117, firmwareLen=102294, UpdateByDriver=1
+[0508-09:44:54:375][PID:3720][TID:04188][GFDrv][info][gfUpdatefirmware:04652] Goodix>>> Current MCU Version: GF_ST411SEC_APP_12117
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][info][gf_findAPPOrIAP:06490] Goodix>>> Not Find :IAP
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][info][gfUpdatefirmware:04659] Goodix>>> MCU not runs IAP
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][info][gfUpdatefirmware:04664] Goodix>>> Driver auto update firmware
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][info][gfUpdatefirmware:04667] Goodix>>> the same version, no need to update firmware
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][debug][gfUpdatefirmware:04763] Goodix>>> exit 0x1
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][debug][gdx_UpdateFirmware_LockState:04611] Goodix>>> to restore, to set state to 1
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 4 to 1
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][info][gdx_UpdateFirmware_LockState:04617] Goodix>>> <= with 0x1.
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][info][init_MCU:01338] Goodix>>> return 0x1 after firmware update
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][info][init_MCU:01435] Goodix>>> exit return 0x0, inited 1
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][info][init_FPSensor:00997] Goodix>>> enter
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][debug][init_FPSensor:01013] Goodix>>> CONFIG DATA: retry_count_for_common_init 3, hard_coded_chipid_switch 0
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][info][init_FPSensor:01019] Goodix>>> --- to get CHIP ID
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][debug][init_FPSensor:01020] Goodix>>> --- SetIdle
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][debug][gfresetMCUAndfingerprint:04411] Goodix>>> reset sensor
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][debug][gfresetMCUAndfingerprint:04422] Goodix>>> reset device, reset_flag=1, fdt down mode 0
+[0508-09:44:54:377][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0xa-1-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:386][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0xa2 0x1
+[0508-09:44:54:386][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:386][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0xa2
+[0508-09:44:54:386][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:436][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 7, checksum: 0xa7 and first 5 bytes: 0xa2 0x4 0x0 0x1 0x0
+[0508-09:44:54:436][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xa-0x1-0x0-4
+[0508-09:44:54:436][PID:3720][TID:04152][GFDrv][debug][data_from_device:03463] Goodix>>> --- cmd: other
+[0508-09:44:54:436][PID:3720][TID:04152][GFDrv][debug][get_other_data:04151] Goodix>>> CHIP_RESET::0x010008
+[0508-09:44:54:436][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:456][PID:3720][TID:04188][GFDrv][debug][init_FPSensor:01027] Goodix>>> --- MILAN_CHIPID
+[0508-09:44:54:456][PID:3720][TID:04188][GFDrv][debug][ChipRegRead:00845] Goodix>>> to read reg, current fdt down mode 0
+[0508-09:44:54:456][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x8-1-0x5-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:457][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x82 0x1
+[0508-09:44:54:457][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:457][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x82
+[0508-09:44:54:457][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04253] Goodix>>> get ack for read register, current fdt dowm mode:0
+[0508-09:44:54:457][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 8, checksum: 0xa8 and first 5 bytes: 0x82 0x5 0x0 0xa2 0x4
+[0508-09:44:54:457][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x8-0x1-0x0-5
+[0508-09:44:54:457][PID:3720][TID:04152][GFDrv][debug][data_from_device:03421] Goodix>>> --- cmd: regrw
+[0508-09:44:54:475][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:475][PID:3720][TID:04188][GFDrv][info][init_FPSensor:01045] Goodix>>> Get Chip ID: 0x2504
+[0508-09:44:54:475][PID:3720][TID:04188][GFDrv][info][device_enable_init_by_chip:01473] Goodix>>> enter
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][info][device_enable_init_by_chip:01490] Goodix>>> to init device by chipid 0x2504
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][info][device_enable_init_by_chip:01542] Goodix>>> !!!! to Open ChicagoHS, sensor type: 12
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][info][device_enable_init_by_chip:01557] Goodix>>> sensor info ready, chipid:0x2504, sensorType:12, col:80, row:64
+[0508-09:44:54:477][PID:3720][TID:03420][GFDrv][info][OnGetSensorInfo:02573] Goodix>>> got sensor info, chipid:0x2504, sensorType:12, col:80, row:64
+[0508-09:44:54:477][PID:3720][TID:03420][GFDrv][debug][OnGetSensorInfo:02580] Goodix>>> Exit
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][debug][InitOneKeyImgBuffer:00070] Goodix>>> Index 1 buffer address:0x0000016A441DAB10
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][debug][InitOneKeyImgBuffer:00070] Goodix>>> Index 2 buffer address:0x0000016A441DD320
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][debug][InitOneKeyImgBuffer:00070] Goodix>>> Index 3 buffer address:0x0000016A441DFB30
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][debug][InitOneKeyImgBuffer:00070] Goodix>>> Index 4 buffer address:0x0000016A441E2340
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][info][device_enable_init_by_chip:01622] Goodix>>> exit 1
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][info][init_FPSensor:01063] Goodix>>> Get Chip ID: 0x2504 in 0 try
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][debug][device_action:02573] Goodix>>> to set state to DEVICE_ACTION
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 1 to 3
+[0508-09:44:54:477][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0xa-3-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:486][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0xa6 0x1
+[0508-09:44:54:486][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:487][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0xa6
+[0508-09:44:54:487][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:505][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 68, checksum: 0xe4 and first 5 bytes: 0xa6 0x41 0x0 0x53 0x32
+[0508-09:44:54:505][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xa-0x3-0x0-65
+[0508-09:44:54:507][PID:3720][TID:04152][GFDrv][debug][data_from_device:03463] Goodix>>> --- cmd: other
+[0508-09:44:54:516][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:516][PID:3720][TID:04188][GFDrv][debug][device_action:02822] Goodix>>> to set state to DEVICE_ENABLE
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 3 to 1
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][init_FPSensor:01098] Goodix>>> OTP::0x5332383733342e0032778aa2d495ca055107050a7d0bfd274103110cf17f800c38813034a57f5ef406c4bd4201bdb7b9b7b7b7b9b7b73230a55a5ea1850cfd71
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][info][init_FPSensor:01107] Goodix>>> Success to get OTP data
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][device_action:02573] Goodix>>> to set state to DEVICE_ACTION
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 1 to 3
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][CheckTcodeAndDiff:05053] Goodix>>> enter
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][download_general_config:00394] Goodix>>> ~~~~~~~sensortype:12
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][ChicagoHU_check_sensor:01427] Goodix>>> enter, otp size 64, default tcode 128, default fdt delta 21
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][info][ChicagoHU_check_sensor:01430] Goodix>>> read 64 bytes from base file
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][ChicagoHU_check_sensor:01431] Goodix>>> read OTP from file: :0x5332383733342e0032778aa2d495ca055107050a7d0bfd274103110cf17f800c38813034a57f5ef406c4bd4201bdb7b9b7b7b7b9b7b73230a55a5ea1850cfd71
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][info][ChicagoHU_check_sensor:01435] Goodix>>> the same OTP in file and from FP
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][ChicagoHU_OTPCRCCheck:01325] Goodix>>> entry
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][ChicagoHU_OTPCRCCheck:01340] Goodix>>> OTP cp data::0x5332383733342e0032778aa57f5ef4
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][ChicagoHU_OTPCRCCheck:01342] Goodix>>> cp check CRC=133, chip cp CRC=133
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][ChicagoHU_OTPCRCCheck:01360] Goodix>>> OTP mt data::0x7d0bfd274103110c7f800c3881303406c4bd4201bdb7b9b7b73230
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][ChicagoHU_OTPCRCCheck:01362] Goodix>>> mt check CRC=113, chip mt CRC=113
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][ChicagoHU_OTPCRCCheck:01382] Goodix>>> OTP ft data::0xa2d495ca055107050af1b7b9b7b7a55a5ea1fd
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][ChicagoHU_OTPCRCCheck:01384] Goodix>>> ft check CRC=12, chip ft CRC=12
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][chicagoHU_check_ft_info:01087] Goodix>>> FT OTP check, CRC8 check success
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][debug][chicagoHU_series_update_dac_register_from_otp:01316] Goodix>>> from otp dac 0xb78, dac1 0xb9, dac2 0xb7, dac3 0xb7
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][info][modify_image_tcode:00444] Goodix>>> data index: 0xeb, before update: 0x100 after update:0x0, tcode:256
+[0508-09:44:54:517][PID:3720][TID:04188][GFDrv][info][modify_fdt_delta:00485] Goodix>>> data index: 0xc7, before update: 0x80 0x15 after update:0x80 0x1f, delta:31
+[0508-09:44:54:527][PID:3720][TID:04188][GFDrv][debug][ChicagoHU_check_sensor:01476] Goodix>>> from otp, tcode 256, fdt delta 31
+[0508-09:44:54:528][PID:3720][TID:04188][GFDrv][debug][ChicagoHU_check_sensor:01524] Goodix>>> fdtOffset:0x0
+[0508-09:44:54:528][PID:3720][TID:04188][GFDrv][info][CheckTcodeAndDiff:05064] Goodix>>> default 0, FDT_Init, sensortype: 12, fdt_delta:31, tcode:256
+[0508-09:44:54:528][PID:3720][TID:04188][GFDrv][debug][gf_set_config:04521] Goodix>>> enter
+[0508-09:44:54:528][PID:3720][TID:04188][GFDrv][debug][gfresetMCUAndfingerprint:04411] Goodix>>> reset sensor
+[0508-09:44:54:528][PID:3720][TID:04188][GFDrv][debug][gfresetMCUAndfingerprint:04422] Goodix>>> reset device, reset_flag=1, fdt down mode 0
+[0508-09:44:54:528][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0xa-1-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:528][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0xa2 0x1
+[0508-09:44:54:528][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:528][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0xa2
+[0508-09:44:54:535][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:587][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 7, checksum: 0xa7 and first 5 bytes: 0xa2 0x4 0x0 0x1 0x0
+[0508-09:44:54:587][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xa-0x1-0x0-4
+[0508-09:44:54:587][PID:3720][TID:04152][GFDrv][debug][data_from_device:03463] Goodix>>> --- cmd: other
+[0508-09:44:54:587][PID:3720][TID:04152][GFDrv][debug][get_other_data:04151] Goodix>>> CHIP_RESET::0x010008
+[0508-09:44:54:587][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:587][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 7, Type 0, base_type 0
+[0508-09:44:54:587][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:44:54:587][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00605] Goodix>>> setmode: idle
+[0508-09:44:54:587][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x7-0-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:587][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x70 0x1
+[0508-09:44:54:595][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:595][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x70
+[0508-09:44:54:595][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04249] Goodix>>> get ack for set idle, current fdt dowm mode:0
+[0508-09:44:54:615][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:615][PID:3720][TID:04188][GFDrv][debug][ChipRegWrite:00874] Goodix>>> to write reg, current fdt down mode 0
+[0508-09:44:54:615][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x8-0-0x5-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:636][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x80 0x1
+[0508-09:44:54:637][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:637][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x80
+[0508-09:44:54:637][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:656][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:656][PID:3720][TID:04188][GFDrv][debug][ChipRegWrite:00874] Goodix>>> to write reg, current fdt down mode 0
+[0508-09:44:54:657][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x8-0-0x5-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:658][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x80 0x1
+[0508-09:44:54:658][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:658][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x80
+[0508-09:44:54:658][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:677][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:677][PID:3720][TID:04188][GFDrv][debug][ChipRegWrite:00874] Goodix>>> to write reg, current fdt down mode 0
+[0508-09:44:54:677][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x8-0-0x5-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:678][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x80 0x1
+[0508-09:44:54:678][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:678][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x80
+[0508-09:44:54:678][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:696][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:696][PID:3720][TID:04188][GFDrv][debug][ChipRegWrite:00874] Goodix>>> to write reg, current fdt down mode 0
+[0508-09:44:54:696][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x8-0-0x5-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:697][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x80 0x1
+[0508-09:44:54:697][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:697][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x80
+[0508-09:44:54:697][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:716][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:717][PID:3720][TID:04188][GFDrv][debug][ChicagoHUsetDac:00411] Goodix>>> wrote down dac 0xb78, dac1 0xb9,dac2 0xb7, dac3 0xb7
+[0508-09:44:54:736][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x9-0-0x100-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:747][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x90 0x1
+[0508-09:44:54:747][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:747][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x90
+[0508-09:44:54:749][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:749][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0x90 0x3 0x0 0x1 0x0
+[0508-09:44:54:749][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x9-0x0-0x0-3
+[0508-09:44:54:749][PID:3720][TID:03604][GFDrv][debug][data_from_device:03440] Goodix>>> --- cmd: chip cfg
+[0508-09:44:54:775][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:775][PID:3720][TID:04188][GFDrv][debug][gf_set_config:04549] Goodix>>> exit, ret = 1, fdt down mode 0
+[0508-09:44:54:775][PID:3720][TID:04188][GFDrv][debug][device_action:02822] Goodix>>> to set state to DEVICE_ENABLE
+[0508-09:44:54:775][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 3 to 1
+[0508-09:44:54:777][PID:3720][TID:04188][GFDrv][info][init_FPSensor:01110] Goodix>>> success to get OTP data, download config return 1
+[0508-09:44:54:777][PID:3720][TID:04188][GFDrv][info][init_FPSensor:01120] Goodix>>> after check sensor, otp_valid=1, before set power down scan frequency
+[0508-09:44:54:777][PID:3720][TID:04188][GFDrv][debug][device_action:02573] Goodix>>> to set state to DEVICE_ACTION
+[0508-09:44:54:777][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 1 to 3
+[0508-09:44:54:777][PID:3720][TID:04188][GFDrv][debug][gf_set_pwrdown_fdt_scanfreq:04556] Goodix>>> entry
+[0508-09:44:54:777][PID:3720][TID:04188][GFDrv][debug][gf_set_pwrdown_fdt_scanfreq:04558] Goodix>>> to set pwrdown fdt scan freq, current fdt down mode 0
+[0508-09:44:54:777][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x9-2-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:778][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x94 0x1
+[0508-09:44:54:778][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:778][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x94
+[0508-09:44:54:778][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:778][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0x94 0x3 0x0 0x1 0x0
+[0508-09:44:54:785][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x9-0x2-0x0-3
+[0508-09:44:54:785][PID:3720][TID:03604][GFDrv][debug][data_from_device:03440] Goodix>>> --- cmd: chip cfg
+[0508-09:44:54:796][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:796][PID:3720][TID:04188][GFDrv][debug][gf_set_pwrdown_fdt_scanfreq:04571] Goodix>>> exit, ret = 1
+[0508-09:44:54:797][PID:3720][TID:04188][GFDrv][debug][device_action:02591] Goodix>>> Set powerdown fdt scan frequence
+[0508-09:44:54:797][PID:3720][TID:04188][GFDrv][debug][device_action:02822] Goodix>>> to set state to DEVICE_ENABLE
+[0508-09:44:54:797][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 3 to 1
+[0508-09:44:54:797][PID:3720][TID:04188][GFDrv][info][init_FPSensor:01217] Goodix>>> exit return 1, inited 1
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][debug][device_action:02573] Goodix>>> to set state to DEVICE_ACTION
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 1 to 3
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][debug][device_action:02745] Goodix>>> besdenable:1
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][debug][device_action:02822] Goodix>>> to set state to DEVICE_ENABLE
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 3 to 1
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][info][_DeviceInit:00608] Goodix>>> Init Device Done Successfully
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][info][InitThread:00995] Goodix>>> Init Device Success
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][info][InitThread:01014] Goodix>>> mark tls handshake flag to false
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][info][_TlsInitAndHandShake:00634] Goodix>>> ---- enter
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][debug][_TlsInitAndHandShake:00680] Goodix>>> CONFIG DATA: time_wait_for_tls 1100, time_wait_for_pov 2000
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][info][tlsapp_init_tls_state:00126] Goodix>>> enter
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][info][_TlsInitAndHandShake:00704] Goodix>>> tls init...
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][info][tlsapp_tls_server_init:00288] Goodix>>> enter
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][info][tlslib_server_init:00384] Goodix>>> => tlslib_server_init
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][info][tlslib_server_exit:00509] Goodix>>> => tlslib_server_exit.
+[0508-09:44:54:799][PID:3720][TID:04188][GFDrv][info][tlslib_server_exit:00524] Goodix>>> <= tlslib_server_exit.
+[0508-09:44:54:806][PID:3720][TID:04188][GFDrv][info][tlslib_server_init:00479] Goodix>>>  <= tlslib_server_init [Successfully] ret:0
+[0508-09:44:54:807][PID:3720][TID:04188][GFDrv][info][tlsapp_tls_server_init:00314] Goodix>>> exit with ret:0
+[0508-09:44:54:807][PID:3720][TID:04188][GFDrv][info][TLSServerInit:00468] Goodix>>> TLS Init Success, Set tls inited to TRUE
+[0508-09:44:54:807][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0xd-0-0x2-0(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:54:809][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0xd0 0x1
+[0508-09:44:54:809][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:54:809][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02244] Goodix>>> !!not to wait for ack
+[0508-09:44:54:809][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:54:809][PID:3720][TID:04188][GFDrv][info][_TlsInitAndHandShake:00756] Goodix>>> tls init...done within 16ms, system slow index 2, time for checking tls-hand-shake 1100ms, time_tls_handshake:2200
+[0508-09:44:54:809][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0xd0
+[0508-09:44:54:809][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:54:809][PID:3720][TID:04152][GFDrv][debug][get_msg_data:04309] Goodix>>> --- tls connection ack: 1
+[0508-09:44:54:816][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xb, len: 52, checksum: 0xe4 and first 5 bytes: 0x16 0x3 0x3 0x0 0x2f
+[0508-09:44:54:816][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03624] Goodix>>> tls handshake package, state: 0
+[0508-09:44:54:818][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:818][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 52
+[0508-09:44:54:819][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 5, bytes left: 47
+[0508-09:44:54:819][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:5.
+[0508-09:44:54:819][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:819][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 47, bytes left: 47
+[0508-09:44:54:819][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 47, bytes left: 0
+[0508-09:44:54:819][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:47.
+[0508-09:44:54:819][PID:3720][TID:03604][GFDrv][info][tls_callback_send:00185] Goodix>>> enter, tls inited 1
+[0508-09:44:54:819][PID:3720][TID:03604][GFDrv][info][SendTLSPackage:04803] Goodix>>> SENT DATA LEN: 86, 90, 140
+[0508-09:44:54:855][PID:3720][TID:03604][GFDrv][debug][SendTLSPackage:04867] Goodix>>> exit len=86
+[0508-09:44:54:855][PID:3720][TID:03604][GFDrv][fatal][tls_callback_send:00192] Goodix>>> sent ret:86.
+[0508-09:44:54:855][PID:3720][TID:03604][GFDrv][info][tls_callback_send:00185] Goodix>>> enter, tls inited 1
+[0508-09:44:54:857][PID:3720][TID:03604][GFDrv][info][SendTLSPackage:04803] Goodix>>> SENT DATA LEN: 9, 13, 70
+[0508-09:44:54:876][PID:3720][TID:03604][GFDrv][debug][SendTLSPackage:04867] Goodix>>> exit len=9
+[0508-09:44:54:876][PID:3720][TID:03604][GFDrv][fatal][tls_callback_send:00192] Goodix>>> sent ret:9.
+[0508-09:44:54:876][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:876][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 0
+[0508-09:44:54:877][PID:3720][TID:03604][GFDrv][warn][RecvTLSPackage:04887] Goodix>>> data not enough
+[0508-09:44:54:877][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 0, bytes left: 0
+[0508-09:44:54:877][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:0.
+[0508-09:44:54:877][PID:3720][TID:03604][GFDrv][error][tlslib_read:00578] Goodix>>> tlslib_read error ret(abs): 0x7280, meaning:SSL - The connection indicated an EOF.
+[0508-09:44:54:877][PID:3720][TID:03604][GFDrv][info][set_tls_state:00230] Goodix>>> enter
+[0508-09:44:54:877][PID:3720][TID:03604][GFDrv][debug][tlsapp_set_tls_state:00033] Goodix>>> TLS now IN handshake state:8.
+[0508-09:44:54:877][PID:3720][TID:03604][GFDrv][info][tlslib_read:00571] Goodix>>> <= tlslib_read exit with ret:-29312 tls server state:8.
+[0508-09:44:54:879][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xb, len: 26, checksum: 0xca and first 5 bytes: 0x16 0x3 0x3 0x0 0x15
+[0508-09:44:54:879][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03624] Goodix>>> tls handshake package, state: 8
+[0508-09:44:54:879][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:879][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 26
+[0508-09:44:54:879][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 5, bytes left: 21
+[0508-09:44:54:879][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:5.
+[0508-09:44:54:879][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:886][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 21, bytes left: 21
+[0508-09:44:54:886][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 21, bytes left: 0
+[0508-09:44:54:886][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:21.
+[0508-09:44:54:887][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:887][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 0
+[0508-09:44:54:887][PID:3720][TID:04152][GFDrv][warn][RecvTLSPackage:04887] Goodix>>> data not enough
+[0508-09:44:54:887][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 0, bytes left: 0
+[0508-09:44:54:889][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:0.
+[0508-09:44:54:889][PID:3720][TID:04152][GFDrv][error][tlslib_read:00578] Goodix>>> tlslib_read error ret(abs): 0x7280, meaning:SSL - The connection indicated an EOF.
+[0508-09:44:54:889][PID:3720][TID:04152][GFDrv][info][set_tls_state:00230] Goodix>>> enter
+[0508-09:44:54:889][PID:3720][TID:04152][GFDrv][debug][tlsapp_set_tls_state:00033] Goodix>>> TLS now IN handshake state:10.
+[0508-09:44:54:889][PID:3720][TID:04152][GFDrv][info][tlslib_read:00571] Goodix>>> <= tlslib_read exit with ret:-29312 tls server state:10.
+[0508-09:44:54:897][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xb, len: 6, checksum: 0xb6 and first 5 bytes: 0x14 0x3 0x3 0x0 0x1
+[0508-09:44:54:897][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03624] Goodix>>> tls handshake package, state: 10
+[0508-09:44:54:897][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:897][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 6
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 5, bytes left: 1
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:5.
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 1, bytes left: 1
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 1, bytes left: 0
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:1.
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 0
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][warn][RecvTLSPackage:04887] Goodix>>> data not enough
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 0, bytes left: 0
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:0.
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][error][tlslib_read:00578] Goodix>>> tlslib_read error ret(abs): 0x7280, meaning:SSL - The connection indicated an EOF.
+[0508-09:44:54:899][PID:3720][TID:03604][GFDrv][info][set_tls_state:00230] Goodix>>> enter
+[0508-09:44:54:908][PID:3720][TID:03604][GFDrv][debug][tlsapp_set_tls_state:00033] Goodix>>> TLS now IN handshake state:11.
+[0508-09:44:54:909][PID:3720][TID:03604][GFDrv][info][tlslib_read:00571] Goodix>>> <= tlslib_read exit with ret:-29312 tls server state:11.
+[0508-09:44:54:909][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xb, len: 45, checksum: 0xdd and first 5 bytes: 0x16 0x3 0x3 0x0 0x28
+[0508-09:44:54:909][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03624] Goodix>>> tls handshake package, state: 11
+[0508-09:44:54:909][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:909][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 45
+[0508-09:44:54:909][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 5, bytes left: 40
+[0508-09:44:54:909][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:5.
+[0508-09:44:54:909][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:909][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 40, bytes left: 40
+[0508-09:44:54:909][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 40, bytes left: 0
+[0508-09:44:54:915][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:40.
+[0508-09:44:54:915][PID:3720][TID:04152][GFDrv][info][tls_callback_send:00185] Goodix>>> enter, tls inited 1
+[0508-09:44:54:915][PID:3720][TID:04152][GFDrv][info][SendTLSPackage:04803] Goodix>>> SENT DATA LEN: 6, 10, 70
+[0508-09:44:54:938][PID:3720][TID:04152][GFDrv][debug][SendTLSPackage:04867] Goodix>>> exit len=6
+[0508-09:44:54:938][PID:3720][TID:04152][GFDrv][fatal][tls_callback_send:00192] Goodix>>> sent ret:6.
+[0508-09:44:54:938][PID:3720][TID:04188][GFDrv][debug][_TlsInitAndHandShake:00765] Goodix>>> tls handshake already started
+[0508-09:44:54:938][PID:3720][TID:04152][GFDrv][info][tls_callback_send:00185] Goodix>>> enter, tls inited 1
+[0508-09:44:54:940][PID:3720][TID:04152][GFDrv][info][SendTLSPackage:04803] Goodix>>> SENT DATA LEN: 45, 49, 70
+[0508-09:44:54:940][PID:3720][TID:04188][GFDrv][info][_TlsInitAndHandShake:00785] Goodix>>> TLS Handshake Started, waif for TLS handshake done(2200-50)...
+[0508-09:44:54:975][PID:3720][TID:04152][GFDrv][debug][SendTLSPackage:04867] Goodix>>> exit len=45
+[0508-09:44:54:975][PID:3720][TID:04152][GFDrv][fatal][tls_callback_send:00192] Goodix>>> sent ret:45.
+[0508-09:44:54:975][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:54:975][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 0
+[0508-09:44:54:975][PID:3720][TID:04152][GFDrv][warn][RecvTLSPackage:04887] Goodix>>> data not enough
+[0508-09:44:54:978][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 0, bytes left: 0
+[0508-09:44:54:978][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:0.
+[0508-09:44:54:978][PID:3720][TID:04152][GFDrv][info][set_tls_state:00230] Goodix>>> enter
+[0508-09:44:54:978][PID:3720][TID:04152][GFDrv][debug][tlsapp_set_tls_state:00033] Goodix>>> TLS now IN handshake state:16.
+[0508-09:44:54:978][PID:3720][TID:04152][GFDrv][info][tlslib_read:00565] Goodix>>> TLS handshake over successfully.
+[0508-09:44:54:978][PID:3720][TID:04152][GFDrv][info][tlsapp_trig_tlsconnected:00072] Goodix>>> TLS Connection Ready
+[0508-09:44:54:980][PID:3720][TID:04152][GFDrv][info][tlslib_read:00571] Goodix>>> <= tlslib_read exit with ret:0 tls server state:16.
+[0508-09:44:55:031][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0xd-2-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:55:031][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0xd4 0x1
+[0508-09:44:55:031][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:55:031][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0xd4
+[0508-09:44:55:031][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:55:065][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:55:065][PID:3720][TID:04188][GFDrv][info][_TlsInitAndHandShake:00811] Goodix>>> tls handshake done (server side), 172ms(since start of tls init)
+[0508-09:44:55:095][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0xa-7-0x1-0(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:55:097][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0xae 0x1
+[0508-09:44:55:097][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:55:097][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0xae
+[0508-09:44:55:097][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:44:55:097][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02244] Goodix>>> !!not to wait for ack
+[0508-09:44:55:101][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 20, checksum: 0xb4 and first 5 bytes: 0xae 0x11 0x0 0x1 0x2
+[0508-09:44:55:101][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xa-0x7-0x0-17
+[0508-09:44:55:101][PID:3720][TID:04152][GFDrv][debug][data_from_device:03463] Goodix>>> --- cmd: other
+[0508-09:44:55:101][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:55:101][PID:3720][TID:04188][GFDrv][debug][PrintMcuState:02497] Goodix>>> mcu state::0x01023000003a00002000000000000000
+[0508-09:44:55:101][PID:3720][TID:04188][GFDrv][info][PrintMcuState:02499] Goodix>>> mcu state: version:1, isImageValid:0, isTlsConnected:1, isLocked:0, captured_num:3(0), EC_Falling_Cnt:0, WakeupToPovTime:0ms, WakeupSrc:0x00, OneKeyProcedure:0x00
+[0508-09:44:55:101][PID:3720][TID:04188][GFDrv][info][_TlsInitAndHandShake:00831] Goodix>>> mcu state: version:1, isImageValid:0, isTlsConnected:1, isLocked:0
+[0508-09:44:55:101][PID:3720][TID:04188][GFDrv][notice][_TlsInitAndHandShake:00845] Goodix>>> tls connected success confirmed
+[0508-09:44:55:106][PID:3720][TID:04188][GFDrv][info][_TlsInitAndHandShake:00871] Goodix>>> tls handshake done (client/mcu side)
+[0508-09:44:55:106][PID:3720][TID:04188][GFDrv][info][_TlsInitAndHandShake:00891] Goodix>>> exit, ret 1, bResetMCU 0, tls inited 1
+[0508-09:44:55:106][PID:3720][TID:04188][GFDrv][info][InitThread:01045] Goodix>>> TLS Handshake Success
+[0508-09:44:55:106][PID:3720][TID:04188][GFDrv][info][InitThread:01104] Goodix>>> Init: update all base...
+[0508-09:44:55:107][PID:3720][TID:04188][GFDrv][info][device_check_imagebase_exist:05089] Goodix>>> read data from file 13520 bytes
+[0508-09:44:55:107][PID:3720][TID:04188][GFDrv][info][device_check_imagebase_exist:05091] Goodix>>> read 13520-13520 bytes from base file
+[0508-09:44:55:107][PID:3720][TID:04188][GFDrv][info][device_check_imagebase_exist:05100] Goodix>>> check crc :Crchost:0x98952cbb----crcchip:0x98952cbb
+[0508-09:44:55:107][PID:3720][TID:04188][GFDrv][debug][device_check_imagebase_exist:05114] Goodix>>> get file otp::0x5332383733342e0032778aa2d495ca055107050a7d0bfd274103110cf17f800c38813034a57f5ef406c4bd4201bdb7b9b7b7b7b9b7b73230a55a5ea1850cfd71
+[0508-09:44:55:107][PID:3720][TID:04188][GFDrv][debug][device_check_imagebase_exist:05119] Goodix>>> get nav base and image base from from file
+[0508-09:44:55:107][PID:3720][TID:04188][GFDrv][info][device_check_imagebase_exist:05134] Goodix>>> imagebase exist: 1
+[0508-09:44:55:110][PID:3720][TID:04188][GFDrv][debug][device_check_imagebase_exist:05139] Goodix>>> gf_update_all_base start
+[0508-09:44:55:110][PID:3720][TID:04188][GFDrv][info][gf_update_all_base:05336] Goodix>>> enter
+[0508-09:44:55:110][PID:3720][TID:04188][GFDrv][info][gf_update_all_base:05360] Goodix>>> gf_get_fdtbase 0
+[0508-09:44:55:110][PID:3720][TID:04188][GFDrv][debug][gf_get_fdtbase:05234] Goodix>>> enter
+[0508-09:44:55:110][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 3, base_type 1
+[0508-09:44:55:110][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:44:55:110][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00561] Goodix>>> setmode: Fdt manual
+[0508-09:44:55:110][PID:3720][TID:04188][GFDrv][debug][ChicagoHUSetMode:00586] Goodix>>> switch to FDT mode 3(1Down2Up3Manual)
+[0508-09:44:55:110][PID:3720][TID:04188][GFDrv][debug][ChicagoHUSetMode:00587] Goodix>>> base data sent::0xafafbfbfa4a4b8b8a8a8b7b7
+[0508-09:44:55:110][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x3-3-0xe-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:55:110][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x36 0x1
+[0508-09:44:55:116][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:55:116][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x36
+[0508-09:44:55:117][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04233] Goodix>>> get ack for set fdt manual, current fdt dowm mode:0
+[0508-09:44:55:131][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 20, checksum: 0xb4 and first 5 bytes: 0x36 0x11 0x0 0x0 0x1
+[0508-09:44:55:131][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x3-0x3-0x0-17
+[0508-09:44:55:131][PID:3720][TID:04152][GFDrv][debug][data_from_device:03414] Goodix>>> --- cmd: fdt
+[0508-09:44:55:131][PID:3720][TID:04152][GFDrv][debug][chicagoHUget_fdtdata:00781] Goodix>>> ChicagoIrqStatus:0x100
+[0508-09:44:55:131][PID:3720][TID:04152][GFDrv][info][chicagoHUget_fdtdata:00823] Goodix>>> IRQ for fdt-manual, get fdt-up base, current mode is fdt-manual, touchflag 0x0
+[0508-09:44:55:131][PID:3720][TID:04152][GFDrv][debug][chicagoHUget_fdtdata:00826] Goodix>>> received fdt base::0x5e017f0147016f014f016d01
+[0508-09:44:55:135][PID:3720][TID:04152][GFDrv][info][chicagoHUget_fdtdata:00837] Goodix>>> get fdt-down base, current mode is fdt-manual
+[0508-09:44:55:136][PID:3720][TID:04152][GFDrv][debug][gfCheckFDTBase:00875] Goodix>>> fdt base:0x5e017f0147016f014f016d01
+[0508-09:44:55:137][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[0]:0xaf80
+[0508-09:44:55:137][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[1]:0xbf80
+[0508-09:44:55:137][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[2]:0xa380
+[0508-09:44:55:137][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[3]:0xb780
+[0508-09:44:55:140][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[4]:0xa780
+[0508-09:44:55:141][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[5]:0xb680
+[0508-09:44:55:151][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01846] Goodix>>> GF_FDT_MANUAL start
+[0508-09:44:55:151][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01851] Goodix>>> signal HANDLE_MANU
+[0508-09:44:55:151][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:55:151][PID:3720][TID:04188][GFDrv][debug][gf_get_fdtbase:05253] Goodix>>> exit
+[0508-09:44:55:151][PID:3720][TID:04188][GFDrv][info][gf_update_all_base:05369] Goodix>>> gf_get_navbase
+[0508-09:44:55:151][PID:3720][TID:04188][GFDrv][debug][gf_get_navbase:05208] Goodix>>> get Non-milanL nav data
+[0508-09:44:55:151][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 5, Type 0, base_type 0
+[0508-09:44:55:151][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:44:55:151][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00642] Goodix>>> setmode: nav
+[0508-09:44:55:151][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x5-0-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:55:156][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x50 0x1
+[0508-09:44:55:156][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:55:156][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x50
+[0508-09:44:55:158][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04241] Goodix>>> get ack for set nav, current fdt dowm mode:0
+[0508-09:44:55:176][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 3313, checksum: 0x9d and first 5 bytes: 0x50 0xee 0xc 0x50 0x1
+[0508-09:44:55:176][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x5-0x0-0x0-3310
+[0508-09:44:55:176][PID:3720][TID:04152][GFDrv][debug][data_from_device:03445] Goodix>>> --- recv nav data......length:3310
+[0508-09:44:55:176][PID:3720][TID:04152][GFDrv][info][chicagoHUget_navdata:00745] Goodix>>> 3304 2404 3200
+[0508-09:44:55:181][PID:3720][TID:04152][GFDrv][debug][ChicagoHUDataRegroup:00475] Goodix>>> Regroup pixels:1600
+[0508-09:44:55:181][PID:3720][TID:04152][GFDrv][info][chicagoHUget_navdata:00752] Goodix>>> raw data 0x73 0b 77 0b
+[0508-09:44:55:181][PID:3720][TID:04152][GFDrv][debug][data_from_device:03453] Goodix>>> NAV crc check ok
+[0508-09:44:55:185][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01825] Goodix>>> got data for GF_NAV_MODE
+[0508-09:44:55:185][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:55:185][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01841] Goodix>>> signal HANDLE_NAV
+[0508-09:44:55:187][PID:3720][TID:04188][GFDrv][info][gf_update_all_base:05378] Goodix>>> gf_get_fdtbase 1
+[0508-09:44:55:187][PID:3720][TID:04188][GFDrv][debug][gf_get_fdtbase:05234] Goodix>>> enter
+[0508-09:44:55:187][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 3, base_type 1
+[0508-09:44:55:187][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:44:55:187][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00561] Goodix>>> setmode: Fdt manual
+[0508-09:44:55:191][PID:3720][TID:04188][GFDrv][debug][ChicagoHUSetMode:00586] Goodix>>> switch to FDT mode 3(1Down2Up3Manual)
+[0508-09:44:55:191][PID:3720][TID:04188][GFDrv][debug][ChicagoHUSetMode:00587] Goodix>>> base data sent::0x80af80bf80a380b780a780b6
+[0508-09:44:55:191][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x3-3-0xe-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:55:191][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x36 0x1
+[0508-09:44:55:195][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:55:195][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x36
+[0508-09:44:55:197][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04233] Goodix>>> get ack for set fdt manual, current fdt dowm mode:0
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 20, checksum: 0xb4 and first 5 bytes: 0x36 0x11 0x0 0x0 0x1
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x3-0x3-0x0-17
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][data_from_device:03414] Goodix>>> --- cmd: fdt
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][chicagoHUget_fdtdata:00781] Goodix>>> ChicagoIrqStatus:0x100
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][info][chicagoHUget_fdtdata:00823] Goodix>>> IRQ for fdt-manual, get fdt-up base, current mode is fdt-manual, touchflag 0x0
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][chicagoHUget_fdtdata:00826] Goodix>>> received fdt base::0x5e017f01490170014f016f01
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][info][chicagoHUget_fdtdata:00837] Goodix>>> get fdt-down base, current mode is fdt-manual
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][gfCheckFDTBase:00875] Goodix>>> fdt base:0x5e017f01490170014f016f01
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[0]:0xaf80
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[1]:0xbf80
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[2]:0xa480
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[3]:0xb880
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[4]:0xa780
+[0508-09:44:55:211][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[5]:0xb780
+[0508-09:44:55:217][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01846] Goodix>>> GF_FDT_MANUAL start
+[0508-09:44:55:218][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01851] Goodix>>> signal HANDLE_MANU
+[0508-09:44:55:218][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:55:218][PID:3720][TID:04188][GFDrv][debug][gf_get_fdtbase:05253] Goodix>>> exit
+[0508-09:44:55:221][PID:3720][TID:04188][GFDrv][debug][gf_update_all_base:05386] Goodix>>> fdt_base1::0x5e017f01490170014f016f01fb7f0000c0bf18446a01000008000000fb7f0000
+[0508-09:44:55:221][PID:3720][TID:04188][GFDrv][debug][ChipRegRead:00845] Goodix>>> to read reg, current fdt down mode 0
+[0508-09:44:55:221][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x8-1-0x5-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:55:233][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x82 0x1
+[0508-09:44:55:233][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:55:233][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x82
+[0508-09:44:55:233][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04253] Goodix>>> get ack for read register, current fdt dowm mode:0
+[0508-09:44:55:238][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0x82 0x3 0x0 0x80 0x1f
+[0508-09:44:55:238][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x8-0x1-0x0-3
+[0508-09:44:55:238][PID:3720][TID:04152][GFDrv][debug][data_from_device:03421] Goodix>>> --- cmd: regrw
+[0508-09:44:55:251][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:55:251][PID:3720][TID:04188][GFDrv][info][gf_update_all_base:05400] Goodix>>> fdt_delta 0x1f
+[0508-09:44:55:251][PID:3720][TID:04188][GFDrv][info][gf_get_oneframe:05262] Goodix>>> enter
+[0508-09:44:55:251][PID:3720][TID:04188][GFDrv][debug][gf_get_oneframe:05265] Goodix>>> g_halcontext.sensor_ops.SetMode:0x00007FFB45779DF4.
+[0508-09:44:55:251][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 2, Type 0, base_type 0
+[0508-09:44:55:251][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:44:55:251][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00525] Goodix>>> setmode: Image
+[0508-09:44:55:251][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x2-0-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:55:256][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x20 0x1
+[0508-09:44:55:256][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:55:256][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x20
+[0508-09:44:55:257][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04212] Goodix>>> get ack for set image, current fdt dowm mode:0
+[0508-09:44:55:352][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00558] Goodix>>> timeout, g_d0exit_start = 0
+[0508-09:44:55:359][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xb, len: 10602, checksum: 0x43 and first 5 bytes: 0x17 0x3 0x3 0x29 0x65
+[0508-09:44:55:362][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:55:362][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 10602
+[0508-09:44:55:362][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 5, bytes left: 10597
+[0508-09:44:55:362][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:5.
+[0508-09:44:55:362][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:44:55:362][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 10597, bytes left: 10597
+[0508-09:44:55:362][PID:3720][TID:04152][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 10597, bytes left: 0
+[0508-09:44:55:362][PID:3720][TID:04152][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:10597.
+[0508-09:44:55:367][PID:3720][TID:04152][GFDrv][info][set_tls_state:00230] Goodix>>> enter
+[0508-09:44:55:367][PID:3720][TID:04152][GFDrv][debug][tlsapp_set_tls_state:00033] Goodix>>> TLS now IN handshake state:16.
+[0508-09:44:55:367][PID:3720][TID:04152][GFDrv][info][tlslib_read:00571] Goodix>>> <= tlslib_read exit with ret:10573 tls server state:16.
+[0508-09:44:55:367][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03644] Goodix>>> ---- tls 10573 bytes recv
+[0508-09:44:55:367][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x2-0x0-0x0-10570
+[0508-09:44:55:367][PID:3720][TID:04152][GFDrv][debug][data_from_device:03362] Goodix>>> --- cmd: image
+[0508-09:44:55:367][PID:3720][TID:04152][GFDrv][info][chicagoHUget_rawdata:00700] Goodix>>> 10564 7684 10240
+[0508-09:44:55:367][PID:3720][TID:04152][GFDrv][debug][ChicagoHUDataRegroup:00475] Goodix>>> Regroup pixels:5120
+[0508-09:44:55:372][PID:3720][TID:04152][GFDrv][info][chicagoHUget_rawdata:00708] Goodix>>> raw data 0xf0 09 0b 0a
+[0508-09:44:55:372][PID:3720][TID:04152][GFDrv][debug][data_from_device:03394] Goodix>>> receive non-POV image, length:10570
+[0508-09:44:55:372][PID:3720][TID:04152][GFDrv][debug][data_from_device:03398] Goodix>>> Crc check Ok...
+[0508-09:44:55:386][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01800] Goodix>>> got data for GF_IMAGE_MODE
+[0508-09:44:55:386][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01811] Goodix>>>  ------ got image ----
+[0508-09:44:55:387][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01821] Goodix>>> signal HANDLE_IMAGE
+[0508-09:44:55:387][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:55:387][PID:3720][TID:04188][GFDrv][debug][gf_get_oneframe:05282] Goodix>>> <= gf_get_oneframe with ret(BOOL):1.
+[0508-09:44:55:387][PID:3720][TID:04188][GFDrv][info][gf_update_all_base:05433] Goodix>>> gf_get_fdtbase 2
+[0508-09:44:55:387][PID:3720][TID:04188][GFDrv][debug][gf_get_fdtbase:05234] Goodix>>> enter
+[0508-09:44:55:387][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 3, base_type 1
+[0508-09:44:55:387][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:44:55:387][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00561] Goodix>>> setmode: Fdt manual
+[0508-09:44:55:387][PID:3720][TID:04188][GFDrv][debug][ChicagoHUSetMode:00586] Goodix>>> switch to FDT mode 3(1Down2Up3Manual)
+[0508-09:44:55:387][PID:3720][TID:04188][GFDrv][debug][ChicagoHUSetMode:00587] Goodix>>> base data sent::0x80af80bf80a480b880a780b7
+[0508-09:44:55:392][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x3-3-0xe-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:55:407][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x36 0x1
+[0508-09:44:55:407][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:55:407][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x36
+[0508-09:44:55:407][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04233] Goodix>>> get ack for set fdt manual, current fdt dowm mode:0
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 20, checksum: 0xb4 and first 5 bytes: 0x36 0x11 0x0 0x0 0x1
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x3-0x3-0x0-17
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][debug][data_from_device:03414] Goodix>>> --- cmd: fdt
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][debug][chicagoHUget_fdtdata:00781] Goodix>>> ChicagoIrqStatus:0x100
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][info][chicagoHUget_fdtdata:00823] Goodix>>> IRQ for fdt-manual, get fdt-up base, current mode is fdt-manual, touchflag 0x0
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][debug][chicagoHUget_fdtdata:00826] Goodix>>> received fdt base::0x5e017e014901700150016f01
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][info][chicagoHUget_fdtdata:00837] Goodix>>> get fdt-down base, current mode is fdt-manual
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][debug][gfCheckFDTBase:00875] Goodix>>> fdt base:0x5e017e014901700150016f01
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[0]:0xaf80
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[1]:0xbf80
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[2]:0xa480
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[3]:0xb880
+[0508-09:44:55:427][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[4]:0xa880
+[0508-09:44:55:432][PID:3720][TID:04152][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[5]:0xb780
+[0508-09:44:55:432][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01846] Goodix>>> GF_FDT_MANUAL start
+[0508-09:44:55:432][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:55:432][PID:3720][TID:04188][GFDrv][debug][gf_get_fdtbase:05253] Goodix>>> exit
+[0508-09:44:55:432][PID:3720][TID:04188][GFDrv][info][gf_update_all_base:05441] Goodix>>> gf_get_fdtbase 2 finshed
+[0508-09:44:55:432][PID:3720][TID:04188][GFDrv][debug][gf_update_all_base:05487] Goodix>>> Nav_isTouchedByFinger: void
+[0508-09:44:55:432][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01851] Goodix>>> signal HANDLE_MANU
+[0508-09:44:55:432][PID:3720][TID:04188][GFDrv][debug][gf_update_all_base:05506] Goodix>>> Image_isTouchedByFinger imageret = 0x2
+[0508-09:44:55:432][PID:3720][TID:04188][GFDrv][debug][gf_update_all_base:05517] Goodix>>> Image_isTouchedByFinger: void
+[0508-09:44:55:438][PID:3720][TID:04188][GFDrv][debug][gf_update_all_base:05529] Goodix>>> --- base exist, update imagebase
+[0508-09:44:55:438][PID:3720][TID:04188][GFDrv][debug][gf_savebaseTofile:05582] Goodix>>> nav buffer size:3200 buffer size:10240
+[0508-09:44:55:438][PID:3720][TID:04188][GFDrv][debug][gf_savebaseTofile:05588] Goodix>>> save imagebase 
+[0508-09:44:55:438][PID:3720][TID:04188][GFDrv][info][gf_savebaseTofile:05603] Goodix>>> write 13520-13520 bytes to base file
+[0508-09:44:55:438][PID:3720][TID:04188][GFDrv][debug][gf_savebaseTofile:05612] Goodix>>> exit size:13520(dec)
+[0508-09:44:55:442][PID:3720][TID:04188][GFDrv][info][gf_update_all_base:05563] Goodix>>> exit, ren = 1
+[0508-09:44:55:442][PID:3720][TID:04188][GFDrv][debug][device_check_imagebase_exist:05148] Goodix>>> update all base suc, Set FDT normal base and to FDT DOWN
+[0508-09:44:55:443][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 1, base_type 1
+[0508-09:44:55:443][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:44:55:443][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00536] Goodix>>> setmode: Fdt down
+[0508-09:44:55:443][PID:3720][TID:04188][GFDrv][debug][ChicagoHUSetMode:00586] Goodix>>> switch to FDT mode 1(1Down2Up3Manual)
+[0508-09:44:55:445][PID:3720][TID:04188][GFDrv][debug][ChicagoHUSetMode:00587] Goodix>>> base data sent::0x80af80bf80a480b880a880b7
+[0508-09:44:55:445][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x3-1-0xe-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:44:55:447][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x32 0x1
+[0508-09:44:55:447][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:44:55:447][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x32
+[0508-09:44:55:447][PID:3720][TID:03604][GFDrv][trace][get_msg_data:04225] Goodix>>> get ack for set fdt down, current fdt dowm mode:1
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][info][InitThread:01107] Goodix>>> Init: update all base have done
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][info][InitThread:01142] Goodix>>> Init thread complete, to fdt down, current fdt down mode 1
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][debug][device_action:02573] Goodix>>> to set state to DEVICE_ACTION
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 1 to 3
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][warn][device_action:02637] Goodix>>> temperature not occure, to FDT DOWN
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 1, base_type 1
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][info][ChicagoHUSetMode:00511] Goodix>>> already in fdt down mode 1
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][debug][ChicagoHUSetMode:00513] Goodix>>> exit 1
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][debug][device_action:02822] Goodix>>> to set state to DEVICE_ENABLE
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][debug][set_state:00743] Goodix>>> to set state from 3 to 1
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][info][InitThread:01149] Goodix>>> !!Init: Initialization done successfully
+[0508-09:44:55:467][PID:3720][TID:04188][GFDrv][info][InitThread:01157] Goodix>>> --- Init: end
+[0508-09:45:04:589][PID:3720][TID:03600][GFDrv][info][MilanEvtDeviceD0Exit:03935] Goodix>>> target state: 4, power action: 0
+[0508-09:45:04:589][PID:3720][TID:03600][GFDrv][info][MilanEvtDeviceD0Exit:03944] Goodix>>> D0Exit, current fdt down mode 0, fdt_is_down 0
+[0508-09:45:04:589][PID:3720][TID:03600][GFDrv][warn][ClearPOVImage:03857] Goodix>>> no pov data
+[0508-09:45:04:589][PID:3720][TID:03600][GFDrv][debug][MilanEvtDeviceD0Exit:03952] Goodix>>> stop readpipe!!!
+[0508-09:45:04:589][PID:3720][TID:03600][GFDrv][info][MilanEvtDeviceD0Exit:03961] Goodix>>> enter S0 idle
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][info][MilanEvtDeviceD0Entry:03847] Goodix>>> entry, prev state: 4(4-D3,5-D3Final), power action: 0, driver version 1.1.124.12
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][debug][MilanEvtDeviceD0Entry:03855] Goodix>>> start readpipe!!!
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][info][MilanEvtDeviceD0Entry:03888] Goodix>>> resume from S0 idle
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][debug][_StartInitThread:04805] Goodix>>> enter
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][debug][_StopInitThread:04776] Goodix>>> enter
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][info][_StopInitThread:04784] Goodix>>> to wait for init thread to complete
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][info][_StopInitThread:04786] Goodix>>> init thread completed
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][info][_StartInitThread:04814] Goodix>>> to create init thread
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][debug][_StartInitThread:04823] Goodix>>> exit
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][info][MilanEvtDeviceD0Entry:03917] Goodix>>> exit
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][trace][OnActivate:02891] Goodix>>> entry
+[0508-09:45:10:728][PID:3720][TID:02428][GFDrv][info][sessionThread:00117] Goodix>>> system is locked
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][info][OnActivate:02935] Goodix>>> The last OnActivate done.
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][info][OnActivate:02938] Goodix>>> activate 1
+[0508-09:45:10:728][PID:3720][TID:03600][GFDrv][debug][OnActivate:02977] Goodix>>> exit with activate flag 1
+[0508-09:45:10:728][PID:3720][TID:06096][GFDrv][info][InitThread:00942] Goodix>>> --- Init: start
+[0508-09:45:10:728][PID:3720][TID:06096][GFDrv][debug][InitThread:00956] Goodix>>> Init: CONFIG DATA: time_wait_for_tls 1100, time_wait_for_pov 2000, retry_count_for_common_init 3
+[0508-09:45:10:749][PID:3720][TID:06096][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x0-0-0x4-0(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:45:10:749][PID:3720][TID:06096][GFDrv][debug][UsbSendDataToDevice:02244] Goodix>>> !!not to wait for ack
+[0508-09:45:10:786][PID:3720][TID:06096][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0xa-7-0x1-0(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:45:10:791][PID:3720][TID:03420][GFDrv][debug][OnGetAttributes:01621] Goodix>>> entry
+[0508-09:45:10:791][PID:3720][TID:03420][GFDrv][debug][OnGetAttributes:01667] Goodix>>> outputBufferSize:0x62c, struct size:0x62c
+[0508-09:45:10:791][PID:3720][TID:03420][GFDrv][debug][OnGetAttributes:01704] Goodix>>> exit
+[0508-09:45:10:791][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02127] Goodix>>> entry, request:FFFFFE95BBE46238
+[0508-09:45:10:791][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02216] Goodix>>> !!!!CompletePendingRequest outputbuffer size: 0xe980
+[0508-09:45:10:807][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02127] Goodix>>> entry, request:FFFFFE95BBE46658
+[0508-09:45:10:807][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02221] Goodix>>> Purpose=2, Type=1025, Owner=27, Flags=0x20
+[0508-09:45:10:807][PID:3720][TID:04432][GFDrv][info][_ForFRRFARTestSkipCaptureData:01070] Goodix>>> enter
+[0508-09:45:10:807][PID:3720][TID:04432][GFDrv][info][_ForFRRFARTestSkipCaptureData:01089] Goodix>>> exit
+[0508-09:45:10:807][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02301] Goodix>>> to wait init done
+[0508-09:45:10:807][PID:3720][TID:06096][GFDrv][debug][UsbSendDataToDevice:02244] Goodix>>> !!not to wait for ack
+[0508-09:45:10:807][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0xae 0x1
+[0508-09:45:10:807][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:45:10:807][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0xae
+[0508-09:45:10:807][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:45:10:807][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 20, checksum: 0xb4 and first 5 bytes: 0xae 0x11 0x0 0x1 0x2
+[0508-09:45:10:807][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xa-0x7-0x0-17
+[0508-09:45:10:807][PID:3720][TID:03604][GFDrv][debug][data_from_device:03463] Goodix>>> --- cmd: other
+[0508-09:45:10:833][PID:3720][TID:06096][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:45:10:833][PID:3720][TID:06096][GFDrv][debug][PrintMcuState:02497] Goodix>>> mcu state::0x01023000003a00002000000000000000
+[0508-09:45:10:833][PID:3720][TID:06096][GFDrv][info][PrintMcuState:02499] Goodix>>> mcu state: version:1, isImageValid:0, isTlsConnected:1, isLocked:0, captured_num:3(0), EC_Falling_Cnt:0, WakeupToPovTime:0ms, WakeupSrc:0x00, OneKeyProcedure:0x00
+[0508-09:45:10:833][PID:3720][TID:06096][GFDrv][info][InitThread:00968] Goodix>>> get pov images directly.
+[0508-09:45:10:838][PID:3720][TID:06096][GFDrv][info][InitThread:01142] Goodix>>> Init thread complete, to fdt down, current fdt down mode 0
+[0508-09:45:10:838][PID:3720][TID:06096][GFDrv][debug][device_action:02573] Goodix>>> to set state to DEVICE_ACTION
+[0508-09:45:10:838][PID:3720][TID:06096][GFDrv][debug][set_state:00743] Goodix>>> to set state from 1 to 3
+[0508-09:45:10:838][PID:3720][TID:06096][GFDrv][warn][device_action:02637] Goodix>>> temperature not occure, to FDT DOWN
+[0508-09:45:10:838][PID:3720][TID:06096][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 1, base_type 1
+[0508-09:45:10:838][PID:3720][TID:06096][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:45:10:838][PID:3720][TID:06096][GFDrv][info][ChicagoHUSetMode:00536] Goodix>>> setmode: Fdt down
+[0508-09:45:10:838][PID:3720][TID:06096][GFDrv][debug][ChicagoHUSetMode:00586] Goodix>>> switch to FDT mode 1(1Down2Up3Manual)
+[0508-09:45:10:838][PID:3720][TID:06096][GFDrv][debug][ChicagoHUSetMode:00587] Goodix>>> base data sent::0x80af80bf80a480b880a880b7
+[0508-09:45:10:838][PID:3720][TID:06096][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x3-1-0xe-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:45:10:838][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x32 0x1
+[0508-09:45:10:838][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:45:10:838][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x32
+[0508-09:45:10:838][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04225] Goodix>>> get ack for set fdt down, current fdt dowm mode:1
+[0508-09:45:10:898][PID:3720][TID:06096][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:45:10:898][PID:3720][TID:06096][GFDrv][debug][device_action:02822] Goodix>>> to set state to DEVICE_ENABLE
+[0508-09:45:10:903][PID:3720][TID:06096][GFDrv][debug][set_state:00743] Goodix>>> to set state from 3 to 1
+[0508-09:45:10:903][PID:3720][TID:06096][GFDrv][info][InitThread:01149] Goodix>>> !!Init: Initialization done successfully
+[0508-09:45:10:903][PID:3720][TID:06096][GFDrv][info][InitThread:01157] Goodix>>> --- Init: end
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02303] Goodix>>> wait init done
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02324] Goodix>>> OnActivate done.
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02327] Goodix>>> activate 1, fdt_is_down 0, current fdt down mode 1
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02336] Goodix>>> Capture request: invoke call to FDT DOWN
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][debug][device_action:02573] Goodix>>> to set state to DEVICE_ACTION
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][debug][set_state:00743] Goodix>>> to set state from 1 to 3
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][warn][device_action:02637] Goodix>>> temperature not occure, to FDT DOWN
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 1, base_type 1
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][info][ChicagoHUSetMode:00511] Goodix>>> already in fdt down mode 1
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][debug][ChicagoHUSetMode:00513] Goodix>>> exit 1
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][debug][device_action:02822] Goodix>>> to set state to DEVICE_ENABLE
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][debug][set_state:00743] Goodix>>> to set state from 3 to 1
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02349] Goodix>>> ******** to Register CaptureFramedone for capture a frame ********
+[0508-09:45:10:903][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02366] Goodix>>> exit
+[0508-09:45:12:028][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 20, checksum: 0xb4 and first 5 bytes: 0x32 0x11 0x0 0x2 0x0
+[0508-09:45:12:028][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x3-0x1-0x0-17
+[0508-09:45:12:028][PID:3720][TID:03604][GFDrv][debug][data_from_device:03414] Goodix>>> --- cmd: fdt
+[0508-09:45:12:028][PID:3720][TID:03604][GFDrv][debug][chicagoHUget_fdtdata:00781] Goodix>>> ChicagoIrqStatus:0x2
+[0508-09:45:12:028][PID:3720][TID:03604][GFDrv][info][chicagoHUget_fdtdata:00790] Goodix>>> IRQ for fdt-down, get fdt-up base, current mode is fdt-down, touchflag 0x1f
+[0508-09:45:12:028][PID:3720][TID:03604][GFDrv][debug][chicagoHUget_fdtdata:00792] Goodix>>> received fdt base::0xeb002a01c6002101e4005e01
+[0508-09:45:12:028][PID:3720][TID:03604][GFDrv][info][gfFDTUPbase:00929] Goodix>>> iSecondFlag 0, need_fdt_up_twice 0, diff_use 31, touchflag 0x1f
+[0508-09:45:12:028][PID:3720][TID:03604][GFDrv][debug][gfCheckFDTBase:00875] Goodix>>> fdt base:0xeb002a01c6002101e4005e01
+[0508-09:45:12:040][PID:3720][TID:03604][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[0]:0x9480, original 0xafaf
+[0508-09:45:12:040][PID:3720][TID:03604][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[1]:0xb480, original 0xbfbf
+[0508-09:45:12:040][PID:3720][TID:03604][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[2]:0x8280, original 0xa4a4
+[0508-09:45:12:040][PID:3720][TID:03604][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[3]:0xaf80, original 0xb8b8
+[0508-09:45:12:040][PID:3720][TID:03604][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[4]:0x9180, original 0xa8a8
+[0508-09:45:12:040][PID:3720][TID:03604][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[5]:0x1d80, original 0xb7b7
+[0508-09:45:12:056][PID:3720][TID:04180][GFDrv][info][device_fdtdata_analyze:06158] Goodix>>> receive fdt down......fdt_is_down:1, fdt down mode 1 
+[0508-09:45:12:056][PID:3720][TID:04180][GFDrv][trace][gf_captureFingerdata:05878] Goodix>>> entry
+[0508-09:45:12:056][PID:3720][TID:04180][GFDrv][info][gf_get_oneframe:05262] Goodix>>> enter
+[0508-09:45:12:056][PID:3720][TID:04180][GFDrv][debug][gf_get_oneframe:05265] Goodix>>> g_halcontext.sensor_ops.SetMode:0x00007FFB45779DF4.
+[0508-09:45:12:056][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 2, Type 0, base_type 0
+[0508-09:45:12:056][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:45:12:056][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00525] Goodix>>> setmode: Image
+[0508-09:45:12:056][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x2-0-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:45:12:056][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x20 0x1
+[0508-09:45:12:056][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:45:12:056][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x20
+[0508-09:45:12:056][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04212] Goodix>>> get ack for set image, current fdt dowm mode:0
+[0508-09:45:12:166][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDeviceLock:00558] Goodix>>> timeout, g_d0exit_start = 0
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xb, len: 10602, checksum: 0x43 and first 5 bytes: 0x17 0x3 0x3 0x29 0x65
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 10602
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 5, bytes left: 10597
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:5.
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 10597, bytes left: 10597
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 10597, bytes left: 0
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:10597.
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][set_tls_state:00230] Goodix>>> enter
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][debug][tlsapp_set_tls_state:00033] Goodix>>> TLS now IN handshake state:16.
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][tlslib_read:00571] Goodix>>> <= tlslib_read exit with ret:10573 tls server state:16.
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03644] Goodix>>> ---- tls 10573 bytes recv
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x2-0x0-0x0-10570
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][debug][data_from_device:03362] Goodix>>> --- cmd: image
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][chicagoHUget_rawdata:00700] Goodix>>> 10564 7684 10240
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][debug][ChicagoHUDataRegroup:00475] Goodix>>> Regroup pixels:5120
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][info][chicagoHUget_rawdata:00708] Goodix>>> raw data 0x7c 06 84 06
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][debug][data_from_device:03394] Goodix>>> receive non-POV image, length:10570
+[0508-09:45:12:166][PID:3720][TID:03604][GFDrv][debug][data_from_device:03398] Goodix>>> Crc check Ok...
+[0508-09:45:12:181][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01800] Goodix>>> got data for GF_IMAGE_MODE
+[0508-09:45:12:181][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01811] Goodix>>>  ------ got image ----
+[0508-09:45:12:181][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01821] Goodix>>> signal HANDLE_IMAGE
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][debug][gf_get_oneframe:05282] Goodix>>> <= gf_get_oneframe with ret(BOOL):1.
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][debug][gf_captureFingerdata:05908] Goodix>>> gf_captureFingerdata start
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][debug][gf_captureFingerdata:05910] Goodix>>> gf_captureFingerdata imageret = 0x1
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][debug][gf_captureFingerdata:05924] Goodix>>> Image_isTouchedByFinger: finger down
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][debug][gf_captureFingerdata:05972] Goodix>>> ***********to complete capture request, display on***********
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][debug][CaptureFramedone:02425] Goodix>>> Entry: need update 1, pov 0, MonitorOff:0, data size:10240, touchflag: 0x1f
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][info][CaptureFramedone:02442] Goodix>>> ******** CompletePendingRequest ********
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][debug][CompletePendingRequest:02479] Goodix>>> status:0x0
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][info][gf_captureFingerdata:06032] Goodix>>> to get upbase and to set FDT UP
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 2, base_type 1
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00549] Goodix>>> setmode: Fdt up
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][debug][ChicagoHUSetMode:00586] Goodix>>> switch to FDT mode 2(1Down2Up3Manual)
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][debug][ChicagoHUSetMode:00587] Goodix>>> base data sent::0x809480b4808280af8091801d
+[0508-09:45:12:181][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x3-2-0xe-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:45:12:181][PID:3720][TID:04432][GFDrv][debug][OnGetDeviceInfo:02593] Goodix>>> Entry
+[0508-09:45:12:181][PID:3720][TID:04432][GFDrv][info][OnGetDeviceInfo:02637] Goodix>>> 264 == 264 ? 
+[0508-09:45:12:197][PID:3720][TID:04432][GFDrv][info][OnGetDeviceInfo:02643] Goodix>>> got device info, size 264 project_type:2, driver_version:1.1.124.12,  firmware_version: GF_ST411SEC_APP_12117
+[0508-09:45:12:212][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x34 0x1
+[0508-09:45:12:212][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:45:12:212][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x34
+[0508-09:45:12:212][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04229] Goodix>>> get ack for set fdt up, current fdt dowm mode:0
+[0508-09:45:12:228][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:45:12:275][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02127] Goodix>>> entry, request:FFFFFE95BBE46448
+[0508-09:45:12:275][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02221] Goodix>>> Purpose=2, Type=1025, Owner=27, Flags=0x20
+[0508-09:45:12:275][PID:3720][TID:04432][GFDrv][info][_ForFRRFARTestSkipCaptureData:01070] Goodix>>> enter
+[0508-09:45:12:275][PID:3720][TID:04432][GFDrv][info][_ForFRRFARTestSkipCaptureData:01089] Goodix>>> exit
+[0508-09:45:12:275][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02301] Goodix>>> to wait init done
+[0508-09:45:12:275][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02303] Goodix>>> wait init done
+[0508-09:45:12:275][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02324] Goodix>>> OnActivate done.
+[0508-09:45:12:275][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02327] Goodix>>> activate 0, fdt_is_down 1, current fdt down mode 0
+[0508-09:45:12:275][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02349] Goodix>>> ******** to Register CaptureFramedone for capture a frame ********
+[0508-09:45:12:275][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02366] Goodix>>> exit
+[0508-09:45:12:792][PID:3720][TID:02428][GFDrv][info][sessionThread:00102] Goodix>>> UNLOCK to clear pov data right away
+[0508-09:45:12:792][PID:3720][TID:02428][GFDrv][warn][ClearPOVImage:03857] Goodix>>> no pov data
+[0508-09:45:12:822][PID:3720][TID:05444][GFDrv][info][gfOnCancel:02376] Goodix>>> entry
+[0508-09:45:12:822][PID:3720][TID:05444][GFDrv][info][gfOnCancel:02419] Goodix>>> exit
+[0508-09:45:12:822][PID:3720][TID:04432][GFDrv][trace][OnActivate:02891] Goodix>>> entry
+[0508-09:45:12:822][PID:3720][TID:04432][GFDrv][info][OnActivate:02935] Goodix>>> The last OnActivate done.
+[0508-09:45:12:822][PID:3720][TID:04432][GFDrv][info][OnActivate:02938] Goodix>>> activate 0
+[0508-09:45:12:822][PID:3720][TID:04432][GFDrv][debug][OnActivate:02977] Goodix>>> exit with activate flag 0
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 20, checksum: 0xb4 and first 5 bytes: 0x34 0x11 0x0 0x0 0x2
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x3-0x2-0x0-17
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][data_from_device:03414] Goodix>>> --- cmd: fdt
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][chicagoHUget_fdtdata:00781] Goodix>>> ChicagoIrqStatus:0x200
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][info][chicagoHUget_fdtdata:00845] Goodix>>> IRQ for fdt-up, get fdt-down base, current mode is fdt-up, touchflag 0x0
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][chicagoHUget_fdtdata:00846] Goodix>>> received fdt base::0x5f017f014901700150016f01
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][gfCheckFDTBase:00875] Goodix>>> fdt base:0x5f017f014901700150016f01
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[0]:0xaf80
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[1]:0xbf80
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[2]:0xa480
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[3]:0xb880
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[4]:0xa880
+[0508-09:45:12:860][PID:3720][TID:03604][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[5]:0xb780
+[0508-09:45:12:880][PID:3720][TID:04180][GFDrv][debug][device_fdtdata_analyze:06112] Goodix>>> receive fdt up or reset... 0x2, 2UP,9Reset,fdt down mode 0
+[0508-09:45:12:880][PID:3720][TID:04180][GFDrv][debug][device_fdtdata_analyze:06140] Goodix>>> to call gf_check_baseisvalid
+[0508-09:45:12:880][PID:3720][TID:04180][GFDrv][info][gf_check_baseisvalid:05623] Goodix>>> enter
+[0508-09:45:12:880][PID:3720][TID:04180][GFDrv][info][gf_check_baseisvalid:05639] Goodix>>> base_is_valid:0
+[0508-09:45:12:880][PID:3720][TID:04180][GFDrv][info][gf_get_oneframe:05262] Goodix>>> enter
+[0508-09:45:12:880][PID:3720][TID:04180][GFDrv][debug][gf_get_oneframe:05265] Goodix>>> g_halcontext.sensor_ops.SetMode:0x00007FFB45779DF4.
+[0508-09:45:12:880][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 2, Type 0, base_type 0
+[0508-09:45:12:880][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:45:12:880][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00525] Goodix>>> setmode: Image
+[0508-09:45:12:880][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x2-0-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:45:12:880][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x20 0x1
+[0508-09:45:12:880][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:45:12:880][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x20
+[0508-09:45:12:880][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04212] Goodix>>> get ack for set image, current fdt dowm mode:0
+[0508-09:45:13:024][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xb, len: 10602, checksum: 0x43 and first 5 bytes: 0x17 0x3 0x3 0x29 0x65
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 10602
+[0508-09:45:13:025][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDeviceLock:00558] Goodix>>> timeout, g_d0exit_start = 0
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 5, bytes left: 10597
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:5.
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 10597, bytes left: 10597
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 10597, bytes left: 0
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:10597.
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][set_tls_state:00230] Goodix>>> enter
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][debug][tlsapp_set_tls_state:00033] Goodix>>> TLS now IN handshake state:16.
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][tlslib_read:00571] Goodix>>> <= tlslib_read exit with ret:10573 tls server state:16.
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03644] Goodix>>> ---- tls 10573 bytes recv
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x2-0x0-0x0-10570
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][debug][data_from_device:03362] Goodix>>> --- cmd: image
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][chicagoHUget_rawdata:00700] Goodix>>> 10564 7684 10240
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][debug][ChicagoHUDataRegroup:00475] Goodix>>> Regroup pixels:5120
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][info][chicagoHUget_rawdata:00708] Goodix>>> raw data 0x07 0a 14 0a
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][debug][data_from_device:03394] Goodix>>> receive non-POV image, length:10570
+[0508-09:45:13:025][PID:3720][TID:03604][GFDrv][debug][data_from_device:03398] Goodix>>> Crc check Ok...
+[0508-09:45:13:047][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01800] Goodix>>> got data for GF_IMAGE_MODE
+[0508-09:45:13:047][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01811] Goodix>>>  ------ got image ----
+[0508-09:45:13:047][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:45:13:047][PID:3720][TID:04180][GFDrv][debug][gf_get_oneframe:05282] Goodix>>> <= gf_get_oneframe with ret(BOOL):1.
+[0508-09:45:13:047][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01821] Goodix>>> signal HANDLE_IMAGE
+[0508-09:45:13:047][PID:3720][TID:04180][GFDrv][debug][gf_check_baseisvalid:05652] Goodix>>> before Image_isTouchedByFinger
+[0508-09:45:13:047][PID:3720][TID:04180][GFDrv][debug][gf_check_baseisvalid:05654] Goodix>>> after Image_isTouchedByFinger imageret = 0x2
+[0508-09:45:13:047][PID:3720][TID:04180][GFDrv][debug][gf_check_baseisvalid:05665] Goodix>>> :void
+[0508-09:45:13:047][PID:3720][TID:04180][GFDrv][info][gf_check_baseisvalid:05677] Goodix>>> update imagebase
+[0508-09:45:13:047][PID:3720][TID:04180][GFDrv][debug][gf_get_navbase:05208] Goodix>>> get Non-milanL nav data
+[0508-09:45:13:047][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 5, Type 0, base_type 0
+[0508-09:45:13:047][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:45:13:047][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00642] Goodix>>> setmode: nav
+[0508-09:45:13:047][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x5-0-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:45:13:058][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x50 0x1
+[0508-09:45:13:058][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:45:13:058][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x50
+[0508-09:45:13:058][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04241] Goodix>>> get ack for set nav, current fdt dowm mode:0
+[0508-09:45:13:074][PID:3720][TID:03604][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 3313, checksum: 0x9d and first 5 bytes: 0x50 0xee 0xc 0x50 0x1
+[0508-09:45:13:074][PID:3720][TID:03604][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x5-0x0-0x0-3310
+[0508-09:45:13:074][PID:3720][TID:03604][GFDrv][debug][data_from_device:03445] Goodix>>> --- recv nav data......length:3310
+[0508-09:45:13:074][PID:3720][TID:03604][GFDrv][info][chicagoHUget_navdata:00745] Goodix>>> 3304 2404 3200
+[0508-09:45:13:074][PID:3720][TID:03604][GFDrv][debug][ChicagoHUDataRegroup:00475] Goodix>>> Regroup pixels:1600
+[0508-09:45:13:074][PID:3720][TID:03604][GFDrv][info][chicagoHUget_navdata:00752] Goodix>>> raw data 0x74 0b 78 0b
+[0508-09:45:13:074][PID:3720][TID:03604][GFDrv][debug][data_from_device:03453] Goodix>>> NAV crc check ok
+[0508-09:45:13:092][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01825] Goodix>>> got data for GF_NAV_MODE
+[0508-09:45:13:092][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:45:13:092][PID:3720][TID:04180][GFDrv][debug][gf_check_baseisvalid:05692] Goodix>>> after Nav_isTouchedByFinger navret = 0x2
+[0508-09:45:13:092][PID:3720][TID:04180][GFDrv][debug][gf_check_baseisvalid:05702] Goodix>>> :void
+[0508-09:45:13:092][PID:3720][TID:04180][GFDrv][info][gf_check_baseisvalid:05714] Goodix>>> update navbase
+[0508-09:45:13:092][PID:3720][TID:04180][GFDrv][debug][gf_savebaseTofile:05582] Goodix>>> nav buffer size:3200 buffer size:10240
+[0508-09:45:13:092][PID:3720][TID:04180][GFDrv][debug][gf_savebaseTofile:05588] Goodix>>> save imagebase 
+[0508-09:45:13:092][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01841] Goodix>>> signal HANDLE_NAV
+[0508-09:45:13:092][PID:3720][TID:04180][GFDrv][info][gf_savebaseTofile:05603] Goodix>>> write 13520-13520 bytes to base file
+[0508-09:45:13:092][PID:3720][TID:04180][GFDrv][debug][gf_savebaseTofile:05612] Goodix>>> exit size:13520(dec)
+[0508-09:45:13:092][PID:3720][TID:04180][GFDrv][info][gf_check_baseisvalid:05743] Goodix>>> exit, base_is_valid:1
+[0508-09:45:13:092][PID:3720][TID:04180][GFDrv][info][device_fdtdata_analyze:06147] Goodix>>> after check if base valid: to FDT DOWN
+[0508-09:45:13:092][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 1, base_type 1
+[0508-09:45:13:109][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:45:13:109][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00536] Goodix>>> setmode: Fdt down
+[0508-09:45:13:109][PID:3720][TID:04180][GFDrv][debug][ChicagoHUSetMode:00586] Goodix>>> switch to FDT mode 1(1Down2Up3Manual)
+[0508-09:45:13:109][PID:3720][TID:04180][GFDrv][debug][ChicagoHUSetMode:00587] Goodix>>> base data sent::0x80af80bf80a480b880a880b7
+[0508-09:45:13:109][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x3-1-0xe-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:45:13:109][PID:3720][TID:04152][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x32 0x1
+[0508-09:45:13:109][PID:3720][TID:04152][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:45:13:109][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x32
+[0508-09:45:13:109][PID:3720][TID:04152][GFDrv][trace][get_msg_data:04225] Goodix>>> get ack for set fdt down, current fdt dowm mode:1
+[0508-09:45:13:160][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:45:22:839][PID:3720][TID:06088][GFDrv][info][MilanEvtDeviceD0Exit:03935] Goodix>>> target state: 4, power action: 0
+[0508-09:45:22:839][PID:3720][TID:06088][GFDrv][info][MilanEvtDeviceD0Exit:03944] Goodix>>> D0Exit, current fdt down mode 0, fdt_is_down 0
+[0508-09:45:22:839][PID:3720][TID:06088][GFDrv][warn][ClearPOVImage:03857] Goodix>>> no pov data
+[0508-09:45:22:839][PID:3720][TID:06088][GFDrv][debug][MilanEvtDeviceD0Exit:03952] Goodix>>> stop readpipe!!!
+[0508-09:45:22:839][PID:3720][TID:06088][GFDrv][info][MilanEvtDeviceD0Exit:03961] Goodix>>> enter S0 idle
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][info][MilanEvtDeviceD0Entry:03847] Goodix>>> entry, prev state: 4(4-D3,5-D3Final), power action: 0, driver version 1.1.124.12
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][debug][MilanEvtDeviceD0Entry:03855] Goodix>>> start readpipe!!!
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][info][MilanEvtDeviceD0Entry:03888] Goodix>>> resume from S0 idle
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][debug][_StartInitThread:04805] Goodix>>> enter
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][debug][_StopInitThread:04776] Goodix>>> enter
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][info][_StopInitThread:04784] Goodix>>> to wait for init thread to complete
+[0508-09:48:44:954][PID:3720][TID:02428][GFDrv][info][sessionThread:00117] Goodix>>> system is locked
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][info][_StopInitThread:04786] Goodix>>> init thread completed
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][info][_StartInitThread:04814] Goodix>>> to create init thread
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][debug][_StartInitThread:04823] Goodix>>> exit
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][info][MilanEvtDeviceD0Entry:03917] Goodix>>> exit
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][trace][OnActivate:02891] Goodix>>> entry
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][info][OnActivate:02935] Goodix>>> The last OnActivate done.
+[0508-09:48:44:954][PID:3720][TID:00508][GFDrv][info][InitThread:00942] Goodix>>> --- Init: start
+[0508-09:48:44:954][PID:3720][TID:00508][GFDrv][debug][InitThread:00956] Goodix>>> Init: CONFIG DATA: time_wait_for_tls 1100, time_wait_for_pov 2000, retry_count_for_common_init 3
+[0508-09:48:44:954][PID:3720][TID:00508][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x0-0-0x4-0(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][info][OnActivate:02938] Goodix>>> activate 1
+[0508-09:48:44:954][PID:3720][TID:06088][GFDrv][debug][OnActivate:02977] Goodix>>> exit with activate flag 1
+[0508-09:48:44:954][PID:3720][TID:00508][GFDrv][debug][UsbSendDataToDevice:02244] Goodix>>> !!not to wait for ack
+[0508-09:48:44:970][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02127] Goodix>>> entry, request:FFFFFE95BBE46A78
+[0508-09:48:44:970][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02221] Goodix>>> Purpose=2, Type=1025, Owner=27, Flags=0x20
+[0508-09:48:44:970][PID:3720][TID:04432][GFDrv][info][_ForFRRFARTestSkipCaptureData:01070] Goodix>>> enter
+[0508-09:48:44:970][PID:3720][TID:04432][GFDrv][info][_ForFRRFARTestSkipCaptureData:01089] Goodix>>> exit
+[0508-09:48:44:970][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02301] Goodix>>> to wait init done
+[0508-09:48:44:986][PID:3720][TID:00508][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0xa-7-0x1-0(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:48:44:986][PID:3720][TID:04332][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0xae 0x1
+[0508-09:48:44:986][PID:3720][TID:00508][GFDrv][debug][UsbSendDataToDevice:02244] Goodix>>> !!not to wait for ack
+[0508-09:48:44:986][PID:3720][TID:04332][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:48:44:986][PID:3720][TID:04332][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0xae
+[0508-09:48:44:986][PID:3720][TID:04332][GFDrv][trace][get_msg_data:04257] Goodix>>> get ack for not listed data, current fdt dowm mode:0
+[0508-09:48:44:986][PID:3720][TID:01068][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 20, checksum: 0xb4 and first 5 bytes: 0xae 0x11 0x0 0x1 0x2
+[0508-09:48:44:986][PID:3720][TID:01068][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xa-0x7-0x0-17
+[0508-09:48:44:986][PID:3720][TID:01068][GFDrv][debug][data_from_device:03463] Goodix>>> --- cmd: other
+[0508-09:48:44:986][PID:3720][TID:00508][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:48:44:986][PID:3720][TID:00508][GFDrv][debug][PrintMcuState:02497] Goodix>>> mcu state::0x01023000003a00002000000000000000
+[0508-09:48:44:986][PID:3720][TID:00508][GFDrv][info][PrintMcuState:02499] Goodix>>> mcu state: version:1, isImageValid:0, isTlsConnected:1, isLocked:0, captured_num:3(0), EC_Falling_Cnt:0, WakeupToPovTime:0ms, WakeupSrc:0x00, OneKeyProcedure:0x00
+[0508-09:48:44:986][PID:3720][TID:00508][GFDrv][info][InitThread:00968] Goodix>>> get pov images directly.
+[0508-09:48:44:986][PID:3720][TID:00508][GFDrv][info][InitThread:01142] Goodix>>> Init thread complete, to fdt down, current fdt down mode 0
+[0508-09:48:44:986][PID:3720][TID:00508][GFDrv][debug][device_action:02573] Goodix>>> to set state to DEVICE_ACTION
+[0508-09:48:45:001][PID:3720][TID:00508][GFDrv][debug][set_state:00743] Goodix>>> to set state from 1 to 3
+[0508-09:48:45:001][PID:3720][TID:00508][GFDrv][warn][device_action:02637] Goodix>>> temperature not occure, to FDT DOWN
+[0508-09:48:45:001][PID:3720][TID:00508][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 1, base_type 1
+[0508-09:48:45:001][PID:3720][TID:00508][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:48:45:001][PID:3720][TID:00508][GFDrv][info][ChicagoHUSetMode:00536] Goodix>>> setmode: Fdt down
+[0508-09:48:45:001][PID:3720][TID:00508][GFDrv][debug][ChicagoHUSetMode:00586] Goodix>>> switch to FDT mode 1(1Down2Up3Manual)
+[0508-09:48:45:001][PID:3720][TID:00508][GFDrv][debug][ChicagoHUSetMode:00587] Goodix>>> base data sent::0x80af80bf80a480b880a880b7
+[0508-09:48:45:001][PID:3720][TID:00508][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x3-1-0xe-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:48:45:001][PID:3720][TID:04332][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x32 0x1
+[0508-09:48:45:001][PID:3720][TID:04332][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:48:45:001][PID:3720][TID:04332][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x32
+[0508-09:48:45:001][PID:3720][TID:04332][GFDrv][trace][get_msg_data:04225] Goodix>>> get ack for set fdt down, current fdt dowm mode:1
+[0508-09:48:45:026][PID:3720][TID:00508][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:48:45:026][PID:3720][TID:00508][GFDrv][debug][device_action:02822] Goodix>>> to set state to DEVICE_ENABLE
+[0508-09:48:45:026][PID:3720][TID:00508][GFDrv][debug][set_state:00743] Goodix>>> to set state from 3 to 1
+[0508-09:48:45:026][PID:3720][TID:00508][GFDrv][info][InitThread:01149] Goodix>>> !!Init: Initialization done successfully
+[0508-09:48:45:026][PID:3720][TID:00508][GFDrv][info][InitThread:01157] Goodix>>> --- Init: end
+[0508-09:48:45:026][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02303] Goodix>>> wait init done
+[0508-09:48:45:026][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02324] Goodix>>> OnActivate done.
+[0508-09:48:45:026][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02327] Goodix>>> activate 1, fdt_is_down 0, current fdt down mode 1
+[0508-09:48:45:026][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02336] Goodix>>> Capture request: invoke call to FDT DOWN
+[0508-09:48:45:026][PID:3720][TID:04432][GFDrv][debug][device_action:02573] Goodix>>> to set state to DEVICE_ACTION
+[0508-09:48:45:026][PID:3720][TID:04432][GFDrv][debug][set_state:00743] Goodix>>> to set state from 1 to 3
+[0508-09:48:45:026][PID:3720][TID:04432][GFDrv][warn][device_action:02637] Goodix>>> temperature not occure, to FDT DOWN
+[0508-09:48:45:026][PID:3720][TID:04432][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 1, base_type 1
+[0508-09:48:45:026][PID:3720][TID:04432][GFDrv][info][ChicagoHUSetMode:00511] Goodix>>> already in fdt down mode 1
+[0508-09:48:45:038][PID:3720][TID:04432][GFDrv][debug][ChicagoHUSetMode:00513] Goodix>>> exit 1
+[0508-09:48:45:038][PID:3720][TID:04432][GFDrv][debug][device_action:02822] Goodix>>> to set state to DEVICE_ENABLE
+[0508-09:48:45:038][PID:3720][TID:04432][GFDrv][debug][set_state:00743] Goodix>>> to set state from 3 to 1
+[0508-09:48:45:038][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02349] Goodix>>> ******** to Register CaptureFramedone for capture a frame ********
+[0508-09:48:45:038][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02366] Goodix>>> exit
+[0508-09:48:46:330][PID:3720][TID:01068][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 20, checksum: 0xb4 and first 5 bytes: 0x32 0x11 0x0 0x2 0x0
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x3-0x1-0x0-17
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][debug][data_from_device:03414] Goodix>>> --- cmd: fdt
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][debug][chicagoHUget_fdtdata:00781] Goodix>>> ChicagoIrqStatus:0x2
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][info][chicagoHUget_fdtdata:00790] Goodix>>> IRQ for fdt-down, get fdt-up base, current mode is fdt-down, touchflag 0x2f
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][debug][chicagoHUget_fdtdata:00792] Goodix>>> received fdt base::0xe8003301c70010012c01fa00
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][info][gfFDTUPbase:00929] Goodix>>> iSecondFlag 0, need_fdt_up_twice 0, diff_use 31, touchflag 0x2f
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][debug][gfCheckFDTBase:00875] Goodix>>> fdt base:0xe8003301c70010012c01fa00
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[0]:0x9380, original 0x9480
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[1]:0xb880, original 0xb480
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[2]:0x8280, original 0x8280
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[3]:0xa780, original 0xaf80
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[4]:0x1d80, original 0x9180
+[0508-09:48:46:345][PID:3720][TID:01068][GFDrv][info][gfFDTUPbase:00998] Goodix>>> fdt_upbase[5]:0x9c80, original 0x1d80
+[0508-09:48:46:361][PID:3720][TID:04180][GFDrv][info][device_fdtdata_analyze:06158] Goodix>>> receive fdt down......fdt_is_down:1, fdt down mode 1 
+[0508-09:48:46:361][PID:3720][TID:04180][GFDrv][trace][gf_captureFingerdata:05878] Goodix>>> entry
+[0508-09:48:46:361][PID:3720][TID:04180][GFDrv][info][gf_get_oneframe:05262] Goodix>>> enter
+[0508-09:48:46:361][PID:3720][TID:04180][GFDrv][debug][gf_get_oneframe:05265] Goodix>>> g_halcontext.sensor_ops.SetMode:0x00007FFB45779DF4.
+[0508-09:48:46:361][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 2, Type 0, base_type 0
+[0508-09:48:46:361][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:48:46:361][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00525] Goodix>>> setmode: Image
+[0508-09:48:46:361][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x2-0-0x2-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:48:46:361][PID:3720][TID:04332][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x20 0x1
+[0508-09:48:46:361][PID:3720][TID:04332][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:48:46:361][PID:3720][TID:04332][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x20
+[0508-09:48:46:361][PID:3720][TID:04332][GFDrv][trace][get_msg_data:04212] Goodix>>> get ack for set image, current fdt dowm mode:0
+[0508-09:48:46:471][PID:3720][TID:01068][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xb, len: 10602, checksum: 0x43 and first 5 bytes: 0x17 0x3 0x3 0x29 0x65
+[0508-09:48:46:471][PID:3720][TID:01068][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:48:46:471][PID:3720][TID:01068][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 5, bytes left: 10602
+[0508-09:48:46:471][PID:3720][TID:01068][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 5, bytes left: 10597
+[0508-09:48:46:471][PID:3720][TID:01068][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:5.
+[0508-09:48:46:471][PID:3720][TID:01068][GFDrv][info][tls_callback_recv:00157] Goodix>>> enter, tls inited 1
+[0508-09:48:46:471][PID:3720][TID:01068][GFDrv][info][RecvTLSPackage:04878] Goodix>>> bytes to read: 10597, bytes left: 10597
+[0508-09:48:46:471][PID:3720][TID:01068][GFDrv][info][RecvTLSPackage:04893] Goodix>>> bytes read: 10597, bytes left: 0
+[0508-09:48:46:471][PID:3720][TID:01068][GFDrv][info][tls_callback_recv:00164] Goodix>>> recv ret:10597.
+[0508-09:48:46:486][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDeviceLock:00558] Goodix>>> timeout, g_d0exit_start = 0
+[0508-09:48:46:486][PID:3720][TID:01068][GFDrv][info][set_tls_state:00230] Goodix>>> enter
+[0508-09:48:46:486][PID:3720][TID:01068][GFDrv][debug][tlsapp_set_tls_state:00033] Goodix>>> TLS now IN handshake state:16.
+[0508-09:48:46:486][PID:3720][TID:01068][GFDrv][info][tlslib_read:00571] Goodix>>> <= tlslib_read exit with ret:10573 tls server state:16.
+[0508-09:48:46:486][PID:3720][TID:01068][GFDrv][debug][data_from_USB:03644] Goodix>>> ---- tls 10573 bytes recv
+[0508-09:48:46:486][PID:3720][TID:01068][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x2-0x0-0x0-10570
+[0508-09:48:46:486][PID:3720][TID:01068][GFDrv][debug][data_from_device:03362] Goodix>>> --- cmd: image
+[0508-09:48:46:486][PID:3720][TID:01068][GFDrv][info][chicagoHUget_rawdata:00700] Goodix>>> 10564 7684 10240
+[0508-09:48:46:486][PID:3720][TID:01068][GFDrv][debug][ChicagoHUDataRegroup:00475] Goodix>>> Regroup pixels:5120
+[0508-09:48:46:486][PID:3720][TID:01068][GFDrv][info][chicagoHUget_rawdata:00708] Goodix>>> raw data 0xb7 04 d3 04
+[0508-09:48:46:486][PID:3720][TID:01068][GFDrv][debug][data_from_device:03394] Goodix>>> receive non-POV image, length:10570
+[0508-09:48:46:486][PID:3720][TID:01068][GFDrv][debug][data_from_device:03398] Goodix>>> Crc check Ok...
+[0508-09:48:46:501][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01800] Goodix>>> got data for GF_IMAGE_MODE
+[0508-09:48:46:501][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01811] Goodix>>>  ------ got image ----
+[0508-09:48:46:501][PID:3720][TID:06120][GFDrv][debug][device_data_analyze:01821] Goodix>>> signal HANDLE_IMAGE
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][debug][gf_get_oneframe:05282] Goodix>>> <= gf_get_oneframe with ret(BOOL):1.
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][debug][gf_captureFingerdata:05908] Goodix>>> gf_captureFingerdata start
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][debug][gf_captureFingerdata:05910] Goodix>>> gf_captureFingerdata imageret = 0x1
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][debug][gf_captureFingerdata:05924] Goodix>>> Image_isTouchedByFinger: finger down
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][debug][gf_captureFingerdata:05972] Goodix>>> ***********to complete capture request, display on***********
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][debug][CaptureFramedone:02425] Goodix>>> Entry: need update 1, pov 0, MonitorOff:0, data size:10240, touchflag: 0x2f
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][info][CaptureFramedone:02442] Goodix>>> ******** CompletePendingRequest ********
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][debug][CompletePendingRequest:02479] Goodix>>> status:0x0
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][info][gf_captureFingerdata:06032] Goodix>>> to get upbase and to set FDT UP
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 2, base_type 1
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00549] Goodix>>> setmode: Fdt up
+[0508-09:48:46:501][PID:3720][TID:04180][GFDrv][debug][ChicagoHUSetMode:00586] Goodix>>> switch to FDT mode 2(1Down2Up3Manual)
+[0508-09:48:46:517][PID:3720][TID:04180][GFDrv][debug][ChicagoHUSetMode:00587] Goodix>>> base data sent::0x809380b8808280a7801d809c
+[0508-09:48:46:517][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x3-2-0xe-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:48:46:517][PID:3720][TID:04332][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x34 0x1
+[0508-09:48:46:517][PID:3720][TID:04332][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:48:46:517][PID:3720][TID:04332][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x34
+[0508-09:48:46:517][PID:3720][TID:04332][GFDrv][trace][get_msg_data:04229] Goodix>>> get ack for set fdt up, current fdt dowm mode:0
+[0508-09:48:46:548][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:48:46:579][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02127] Goodix>>> entry, request:FFFFFE95BBE46A78
+[0508-09:48:46:579][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02221] Goodix>>> Purpose=2, Type=1025, Owner=27, Flags=0x20
+[0508-09:48:46:579][PID:3720][TID:04432][GFDrv][info][_ForFRRFARTestSkipCaptureData:01070] Goodix>>> enter
+[0508-09:48:46:579][PID:3720][TID:04432][GFDrv][info][_ForFRRFARTestSkipCaptureData:01089] Goodix>>> exit
+[0508-09:48:46:579][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02301] Goodix>>> to wait init done
+[0508-09:48:46:579][PID:3720][TID:04432][GFDrv][debug][OnCaptureData:02303] Goodix>>> wait init done
+[0508-09:48:46:579][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02324] Goodix>>> OnActivate done.
+[0508-09:48:46:579][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02327] Goodix>>> activate 0, fdt_is_down 1, current fdt down mode 0
+[0508-09:48:46:579][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02349] Goodix>>> ******** to Register CaptureFramedone for capture a frame ********
+[0508-09:48:46:579][PID:3720][TID:04432][GFDrv][info][OnCaptureData:02366] Goodix>>> exit
+[0508-09:48:47:017][PID:3720][TID:01068][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 20, checksum: 0xb4 and first 5 bytes: 0x34 0x11 0x0 0x0 0x2
+[0508-09:48:47:017][PID:3720][TID:01068][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0x3-0x2-0x0-17
+[0508-09:48:47:017][PID:3720][TID:01068][GFDrv][debug][data_from_device:03414] Goodix>>> --- cmd: fdt
+[0508-09:48:47:017][PID:3720][TID:01068][GFDrv][debug][chicagoHUget_fdtdata:00781] Goodix>>> ChicagoIrqStatus:0x200
+[0508-09:48:47:017][PID:3720][TID:01068][GFDrv][info][chicagoHUget_fdtdata:00845] Goodix>>> IRQ for fdt-up, get fdt-down base, current mode is fdt-up, touchflag 0x0
+[0508-09:48:47:034][PID:3720][TID:02428][GFDrv][info][sessionThread:00102] Goodix>>> UNLOCK to clear pov data right away
+[0508-09:48:47:034][PID:3720][TID:01068][GFDrv][debug][chicagoHUget_fdtdata:00846] Goodix>>> received fdt base::0x5e017f014901700151016f01
+[0508-09:48:47:034][PID:3720][TID:02428][GFDrv][warn][ClearPOVImage:03857] Goodix>>> no pov data
+[0508-09:48:47:034][PID:3720][TID:01068][GFDrv][debug][gfCheckFDTBase:00875] Goodix>>> fdt base:0x5e017f014901700151016f01
+[0508-09:48:47:034][PID:3720][TID:01068][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[0]:0xaf80
+[0508-09:48:47:034][PID:3720][TID:01068][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[1]:0xbf80
+[0508-09:48:47:034][PID:3720][TID:01068][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[2]:0xa480
+[0508-09:48:47:034][PID:3720][TID:01068][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[3]:0xb880
+[0508-09:48:47:034][PID:3720][TID:01068][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[4]:0xa880
+[0508-09:48:47:034][PID:3720][TID:01068][GFDrv][debug][gfFDTDownbase:00908] Goodix>>> fdt_downbase[5]:0xb780
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][debug][device_fdtdata_analyze:06112] Goodix>>> receive fdt up or reset... 0x2, 2UP,9Reset,fdt down mode 0
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][debug][device_fdtdata_analyze:06140] Goodix>>> to call gf_check_baseisvalid
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][info][gf_check_baseisvalid:05623] Goodix>>> enter
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][info][gf_check_baseisvalid:05639] Goodix>>> base_is_valid:1
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][info][gf_check_baseisvalid:05743] Goodix>>> exit, base_is_valid:1
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][info][device_fdtdata_analyze:06147] Goodix>>> after check if base valid: to FDT DOWN
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00490] Goodix>>> enter, Mode 3, Type 1, base_type 1
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00518] Goodix>>> current fdt down mode 0
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][info][ChicagoHUSetMode:00536] Goodix>>> setmode: Fdt down
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][debug][ChicagoHUSetMode:00586] Goodix>>> switch to FDT mode 1(1Down2Up3Manual)
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][debug][ChicagoHUSetMode:00587] Goodix>>> base data sent::0x80af80bf80a480b880a880b7
+[0508-09:48:47:064][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDevice:02195] Goodix>>> cmd0-cmd1-Len-ackt:0x3-1-0xe-1000(0x0NOP,0x2Ima,0x3FDT(dow/up/man),0x4FF,0x5NAV,0x6Sle,0x7IDL,0x8REG,0x9CHIP,0xAOTHER,0xBMSG,0xCNOTI,0xDTLSCONN,0xEPROD,0xFUPFW)
+[0508-09:48:47:064][PID:3720][TID:04332][GFDrv][debug][data_from_USB:03608] Goodix>>> spi pack :type: 0xa, len: 6, checksum: 0xa6 and first 5 bytes: 0xb0 0x3 0x0 0x32 0x1
+[0508-09:48:47:064][PID:3720][TID:04332][GFDrv][debug][data_from_device:03316] Goodix>>> recvd data: cmd0-cmd1-cmd2-len: 0xb-0x0-0x0-3
+[0508-09:48:47:064][PID:3720][TID:04332][GFDrv][trace][get_msg_data:04207] Goodix>>> get ack for cmd: 0x32
+[0508-09:48:47:064][PID:3720][TID:05444][GFDrv][info][gfOnCancel:02376] Goodix>>> entry
+[0508-09:48:47:064][PID:3720][TID:04332][GFDrv][trace][get_msg_data:04225] Goodix>>> get ack for set fdt down, current fdt dowm mode:1
+[0508-09:48:47:081][PID:3720][TID:05444][GFDrv][info][gfOnCancel:02419] Goodix>>> exit
+[0508-09:48:47:081][PID:3720][TID:04432][GFDrv][trace][OnActivate:02891] Goodix>>> entry
+[0508-09:48:47:081][PID:3720][TID:04432][GFDrv][info][OnActivate:02935] Goodix>>> The last OnActivate done.
+[0508-09:48:47:081][PID:3720][TID:04432][GFDrv][info][OnActivate:02938] Goodix>>> activate 0
+[0508-09:48:47:081][PID:3720][TID:04432][GFDrv][debug][OnActivate:02977] Goodix>>> exit with activate flag 0
+[0508-09:48:47:097][PID:3720][TID:04180][GFDrv][debug][UsbSendDataToDeviceLock:00576] Goodix>>> exit, ret 1
+[0508-09:48:57:089][PID:3720][TID:01176][GFDrv][info][MilanEvtDeviceD0Exit:03935] Goodix>>> target state: 4, power action: 0
+[0508-09:48:57:089][PID:3720][TID:01176][GFDrv][info][MilanEvtDeviceD0Exit:03944] Goodix>>> D0Exit, current fdt down mode 0, fdt_is_down 0
+[0508-09:48:57:089][PID:3720][TID:01176][GFDrv][warn][ClearPOVImage:03857] Goodix>>> no pov data
+[0508-09:48:57:089][PID:3720][TID:01176][GFDrv][debug][MilanEvtDeviceD0Exit:03952] Goodix>>> stop readpipe!!!
+[0508-09:48:57:089][PID:3720][TID:01176][GFDrv][info][MilanEvtDeviceD0Exit:03961] Goodix>>> enter S0 idle
