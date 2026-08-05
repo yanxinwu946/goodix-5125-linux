@@ -5,6 +5,7 @@ Uses the REAL per-device PSK read earlier via preset_psk_read.
 No firmware flashing, no PSK write, no erase -- all commands are read/activate only.
 Modeled on goodix-fp-dump's driver_51x7.py run_driver (proven on 5117).
 """
+import os
 import re
 import select
 import socket
@@ -18,7 +19,9 @@ import protocol  # noqa: E402
 import tool  # noqa: E402
 
 REAL_PSK = bytes.fromhex(
-    "REDACTED_DEVICE_PSK")
+    "0000000000000000000000000000000000000000000000000000000000000000")
+if os.environ.get("GOODIX_5125_PSK"):
+    REAL_PSK = bytes.fromhex(os.environ["GOODIX_5125_PSK"])
 
 # 5125's own 256-byte MCU config, captured from the Windows driver (avail5125).
 # The whole buffer is ALREADY fully framed (message-pack + cmd 0x90 headers) and

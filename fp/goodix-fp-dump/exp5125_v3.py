@@ -22,7 +22,9 @@ import protocol  # noqa: E402
 import tool  # noqa: E402
 
 REAL_PSK = bytes.fromhex(
-    "REDACTED_DEVICE_PSK")
+    "0000000000000000000000000000000000000000000000000000000000000000")
+if os.environ.get("GOODIX_5125_PSK"):
+    REAL_PSK = bytes.fromhex(os.environ["GOODIX_5125_PSK"])
 
 RAW_DEVICE_CONFIG = bytes.fromhex(
     "a0e4008490e1007011748500852cb118c914dd00dd00dd00ba000180ca000400840015b3860000"

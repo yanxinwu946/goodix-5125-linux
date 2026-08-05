@@ -241,7 +241,15 @@ activate_run_state (FpiSsm *ssm, FpDevice *dev)
 static void
 open_tls_complete (FpDevice *dev, gpointer user_data, GError *error)
 {
-  fpi_image_device_open_complete (FP_IMAGE_DEVICE (dev), error);
+  // The TLS-PSK handshake itself already succeeded (verified in tls_handshake_done
+  // via goodix_tls_server_accept_ok). The only error that can arrive here is a
+  // timeout on the follow-up 0xd4 (TLS_SUCCESSFULLY_ESTABLISHED) confirmation:
+  // once the TLS channel is up the 5125 chip stops ACKing plain message-protocol
+  // commands (observed on 27c6:5125 — only TLS records get replies). Treat that
+  // as best-effort, not fatal, or open() always fails right after a good handshake.
+  if (error)
+    fp_warn ("TLS open: %s (ignored, handshake succeeded)", error->message);
+  fpi_image_device_open_complete (FP_IMAGE_DEVICE (dev), NULL);
 }
 
 static void

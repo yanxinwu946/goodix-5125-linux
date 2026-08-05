@@ -1,0 +1,47 @@
+# Build artifacts
+fp/fork-goodixtls/build/
+*.o
+*.so
+*.a
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Temp files
+/tmp/
+*.log
+*.pgm
+*.bin
+*.pcap
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Internal working files (NOT for the public repo)
+.omo/
+PROGRESS.md
+fp/PROGRESS.md
+fp/HANDOFF.md
+fp/5125-diagnostics.md
+fp/fp-enroll5-result.txt
+
+# Device secrets (local-only)
+/var/lib/fprint/goodix-5125/
+*.real-backup
+
+# Third-party nested clones / vendored sources
+fp/avail5125/
+fp/goodix-fp-dump/log/
+fp/goodix-fp-dump/.github/
+
+# Upstream libfprint tree (only the goodixtls driver subset is tracked here)
+fp/fork-goodixtls/
+
+# Packages
+fp/libfprint_1.94.10-1.debian.tar.xz
