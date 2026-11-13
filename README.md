@@ -4,12 +4,12 @@ Linux driver for the **Goodix 27c6:5125** fingerprint sensor, found in Huawei Ma
 
 ## Status
 
-- ✅ Device activation (0xd4 + enable_chip)
-- ✅ TLS-PSK handshake (via `openssl s_server`)
-- ✅ Finger detection
-- ✅ Dark band cropping (53×80 → NN6 → 318×480)
-- ✅ PAM fingerprint authentication
-- ❌ Image capture (0x20) — **needs plaintext PSK from Windows**
+This experimental driver targets `27c6:5125` with firmware
+`GF_ST411SEC_APP_12509`. It implements device activation, TLS, finger detection,
+and image capture for libfprint. Capturing an image requires a TLS PSK that
+matches the sensor's current pairing. A successful activation or handshake
+alone does not verify image capture or PAM authentication. Verify enrollment
+and matching with `fprintd` before enabling fingerprint login through PAM.
 
 ## Repository Structure
 
@@ -51,8 +51,11 @@ apt install meson ninja-build libglib2.0-dev libgusb-dev libusb-1.0-0-dev \
 
 ### Build
 
+`fp/fork-goodixtls` contains the Goodix driver changes and a top-level Meson
+file. A build requires a complete libfprint source tree with these changes
+integrated. Run the commands below from that tree's root.
+
 ```bash
-cd fp/fork-goodixtls
 mkdir -p build && cd build
 meson setup --prefix=/usr/local ..
 ninja
@@ -81,8 +84,12 @@ systemctl restart fprintd
 
 ### Enroll
 
+Configure the [TLS PSK file](#tls-psk-file), then run these commands as the user
+who will enroll and verify a fingerprint.
+
 ```bash
-fprintd-enroll root right-index-finger
+fprintd-enroll
+fprintd-verify
 ```
 
 ## Architecture
@@ -124,39 +131,28 @@ The 5125 needs a specific initialization: **0xd4 (TLS_SUCCESSFULLY_ESTABLISHED) 
 13. TLS handshake (0xd0 → relay → 0xd4)
 ```
 
-### PSK Issue
+## TLS PSK File
 
-The 32-byte PSK stored at `/var/lib/fprint/goodix-5125/psk` is a **PMK hash** (obfuscated), not the true TLS session key. The Windows driver uses a proprietary whitebox algorithm to derive the real key:
+Save the TLS PSK for the sensor's current pairing as exactly 32 raw bytes at
+`/var/lib/fprint/goodix-5125/psk`. Give the fprintd service access to the file
+and restrict access to other users. Set `GOODIX_5125_PSK_FILE` in the fprintd
+service environment to use a different path.
 
-```
-seal data (332B) → gf_unseal_data → 32B plaintext PSK → whitebox → 96B → hash → 32B PMK hash
-                                        ↑                                       ↑
-                                  true TLS key                          stored in psk file
-```
+The driver uses the file contents as the TLS key. The sensor's `0xbb020003`
+response is a separate pairing validator. The driver checks the response
+format during activation and supplies the local key to the TLS server.
 
-**Without the true plaintext PSK, the 0x20 (MCU_GET_IMAGE) command times out.** The chip detects the PSK mismatch and refuses to send image data.
+## Windows Coexistence
 
-### s_server Workaround
+This driver's activation path reuses the existing pairing. On a sensor paired
+by Windows, use the matching Windows PSK. If Windows changes the active pairing,
+the Linux PSK file must match the new pairing before Linux can use the reader.
 
-The driver uses `openssl s_server` as an external TLS server instead of the internal SSL_accept. This bypasses the cipher negotiation issue that affects OpenSSL 3.x. The TLS handshake succeeds, but the 0x20 image capture still fails without the true PSK.
-
-## PSK Extraction (from Windows)
-
-To fix the 0x20 timeout, extract the true plaintext PSK from Windows:
-
-1. Install [x64dbg](https://x64dbg.com/) on Windows
-2. Run x64dbg as Administrator, attach to `wudfhost.exe`
-3. In the Symbols tab, find `gfspi.dll`
-4. Search for string references containing `mbedtls_ssl_conf_psk`
-5. Set a breakpoint on the `call` instruction before the error log
-6. Trigger Windows Hello fingerprint authentication
-7. When the breakpoint hits:
-   - Verify R8 = 0x20 (32 bytes key length)
-   - RDX points to the 32-byte plaintext PSK
-   - Right-click RDX → Follow in Dump → Copy 32 bytes
-8. Replace the PSK in `goodixtls.c`'s callback with the extracted key
-
-Detailed guide: [AntoG00's PR #1](https://github.com/gulp/libfprint-1/pull/1)
+An independent APP12509 test using a different Linux driver reported successful
+re-pairing and Windows Hello authentication across switches between Linux and
+one existing Windows 11 VM with USB passthrough. Recovery from a clean Windows
+installation or a second independent Windows installation remains unverified
+in those tests. [Validation record](https://github.com/sorguido/goodix-27c6-5125/blob/v3.0.1/docs/VALIDATION_SIGFM_LEGACY.md#L54-L56)
 
 ## Driver Modifications
 

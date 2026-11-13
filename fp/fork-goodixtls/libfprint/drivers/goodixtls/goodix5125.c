@@ -265,9 +265,8 @@ activate_complete (FpiSsm *ssm, FpDevice *dev, GError *error)
   goodix_tls_init (dev, open_tls_complete, NULL);
 }
 
-// Check preset PSK - like 5F10, we can't meaningfully compare the chip-side hash
-// (it's per-device and requires vendor master keys). A wrong PSK is caught later
-// by the TLS-PSK handshake failing.
+// Check the format of the sensor's pairing validator. The TLS handshake
+// uses the PSK loaded from disk.
 static void
 check_preset_psk (FpDevice *dev, gboolean success, guint32 flags, guint8 *psk,
                   guint16 length, gpointer ssm, GError *error)
@@ -282,9 +281,6 @@ check_preset_psk (FpDevice *dev, gboolean success, guint32 flags, guint8 *psk,
       return;
     }
 
-  // Log only. The chip-side hash is per-device and cannot be computed from the
-  // PSK alone without vendor master keys, so we cannot meaningfully compare it
-  // here. A wrong PSK is caught later by the TLS-PSK handshake failing.
   psk_str = data_to_str (psk, length);
   fp_dbg ("Device PMK hash: 0x%s (flags 0x%08x)", psk_str, flags);
   if (flags != GOODIX_5125_PSK_FLAGS || length != GOODIX_5125_PSK_LEN)
@@ -649,14 +645,11 @@ load_secrets (FpiDeviceGoodixTls5125 *self, GError **error)
     {
       g_set_error (error, FP_DEVICE_ERROR, FP_DEVICE_ERROR_GENERAL,
                    "goodixtls5125: failed to load TLS-PSK from \"%s\" (%s). "
-                   "The 5125 sensor uses a device-specific TLS-PSK that the chip "
-                   "is provisioned with at the factory and cannot be derived from "
-                   "scratch on Linux. Place exactly 32 raw bytes at the above "
-                   "path (overridable via the %s environment variable). "
-                   "See the libfprint goodixtls documentation for the companion "
-                   "extraction tool.",
+                   "Provide the %d-byte raw TLS-PSK for the sensor's current "
+                   "pairing at that path, or set %s to the correct file.",
                    psk_path,
                    inner ? inner->message : "wrong file length",
+                     GOODIX_5125_PSK_LEN,
                    GOODIX_5125_PSK_FILE_ENV);
       return FALSE;
     }
