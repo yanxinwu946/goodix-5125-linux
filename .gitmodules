@@ -1,0 +1,4 @@
+[submodule "driver"]
+	path = driver
+	url = https://github.com/arbnorme/libfprint-goodix5125.git
+	branch = goodix5125

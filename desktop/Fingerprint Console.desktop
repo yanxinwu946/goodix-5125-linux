@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Fingerprint Console
+Name[zh_CN]=指纹录入控制台
+Comment=Goodix 5125 enrollment console
+Exec=/opt/goodix5125/start-webui.sh
+Icon=fingerprint
+Terminal=false
+Categories=System;Settings;

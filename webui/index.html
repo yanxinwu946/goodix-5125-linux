@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FPRINT / 5125 — 指纹控制台</title>
+<style>
+  :root{
+    --bg:#08090a;--panel:#0e0f10;--line:#26282b;--fg:#f4f5f6;--muted:#8b8e92;
+    --dim:#56595d;--white:#fff;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{background:var(--bg);color:var(--fg);font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow:hidden}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.3;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:64px 64px;mask-image:linear-gradient(to bottom,transparent,#000 25%,#000 75%,transparent)}
+
+  .top{height:58px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 34px;position:relative;z-index:3;background:rgba(8,9,10,.88);backdrop-filter:blur(12px)}
+  .brand{display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.24em;font-weight:600}
+  .mark{width:9px;height:9px;background:var(--white);display:block;transform:rotate(45deg)}
+  .brand .sep{color:var(--dim)}
+  .nav{display:flex;height:100%;align-items:stretch;gap:26px;margin-left:70px;margin-right:auto}
+  .tab{border:0;background:none;color:var(--dim);font:10px var(--mono);letter-spacing:.18em;text-transform:uppercase;padding:0 2px;cursor:pointer;border-bottom:1px solid transparent;min-width:0}
+  .tab:hover{color:var(--muted)}
+  .tab.active{color:var(--white);border-bottom-color:var(--white)}
+  .badge{border:1px solid var(--line);padding:7px 12px;font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);background:var(--panel)}
+  .badge.live{color:#08090a;background:var(--white);border-color:var(--white)}
+  .badge.done{color:var(--white);border-color:var(--white)}
+
+  .wrap{height:calc(100% - 58px);display:grid;grid-template-columns:minmax(0,1.35fr) minmax(320px,.75fr);position:relative;z-index:1}
+  .hero{display:flex;flex-direction:column;justify-content:center;padding:36px 6vw 36px 7vw;border-right:1px solid var(--line);overflow:auto;min-height:0}
+  .panel{display:none}
+  .panel.show{display:block;animation:fade .25s ease-out}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}}
+
+  .eyebrow{font:10px var(--mono);letter-spacing:.26em;color:var(--muted);text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:20px}
+  .eyebrow i{width:22px;height:1px;background:var(--muted)}
+  h1{font-size:clamp(30px,4.2vw,58px);font-weight:600;letter-spacing:-.045em;line-height:1.02}
+  .sub{margin-top:10px;color:var(--muted);font-size:13px;letter-spacing:.02em}
+
+  .sensor{position:relative;width:164px;height:164px;margin:28px 0 22px}
+  .sensor .ring{position:absolute;inset:0;border:1px solid var(--line);border-radius:50%}
+  .sensor .ring.r2{inset:14px;border-color:#34373a}.sensor .ring.r3{inset:30px;border-color:#45484c}
+  .sensor .core{position:absolute;inset:0;display:grid;place-items:center}
+  .sensor svg{width:70px;height:70px;stroke:var(--white);fill:none;stroke-width:1.3;stroke-linecap:round}
+  .sensor.pulse .ring{animation:pulse 1.6s ease-out infinite}
+  .sensor.pulse .ring.r2{animation-delay:.25s}.sensor.pulse .ring.r3{animation-delay:.5s}
+  @keyframes pulse{0%{transform:scale(.92);opacity:.25}55%{transform:scale(1.02);opacity:1}100%{transform:scale(1.1);opacity:0}}
+  .sensor.ok .ring{border-color:var(--white)}
+  .instruction{font-size:16px;font-weight:500;line-height:1.5;max-width:480px;min-height:48px}
+  .hint{font-size:12px;color:var(--muted);margin-top:7px;max-width:480px;line-height:1.6}
+  .finger-chip{display:inline-block;border:1px solid var(--line);padding:5px 10px;font:10px var(--mono);letter-spacing:.12em;color:var(--muted);margin-top:16px}
+
+  .stages{margin-top:24px;display:flex;gap:6px;flex-wrap:wrap}
+  .stages i{width:19px;height:3px;background:#2d3033;display:block;transition:background .2s}
+  .stages i.on{background:var(--white)}.stages i.now{background:var(--dim);animation:blink 1s infinite}
+  @keyframes blink{50%{opacity:.25}}
+  .stage-label{font:10px var(--mono);letter-spacing:.16em;color:var(--dim);margin-top:9px;text-transform:uppercase}
+
+  .actions{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap}
+  button{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.05em;padding:12px 22px;border:1px solid var(--white);cursor:pointer;transition:.15s;background:var(--white);color:#08090a;min-width:112px}
+  button:hover{background:transparent;color:var(--white)}
+  button.ghost{background:transparent;color:var(--muted);border-color:var(--line)}
+  button.ghost:hover{border-color:var(--white);color:var(--white)}
+  button.danger{background:transparent;color:var(--muted);border-color:var(--line);padding:7px 12px;min-width:0;font-size:10px}
+  button.danger:hover{border-color:var(--white);color:var(--white)}
+  button.action{border-color:var(--line);background:transparent;color:var(--white);padding:7px 12px;min-width:0;font-size:10px}
+  button.action:hover{border-color:var(--white)}
+  button:disabled{opacity:.3;cursor:not-allowed}
+  button:disabled:hover{background:var(--white);color:#08090a}
+  button.ghost:disabled:hover{background:transparent;color:var(--muted);border-color:var(--line)}
+  select{appearance:none;background:var(--panel);color:var(--fg);border:1px solid var(--line);padding:11px 14px;font-family:var(--sans);font-size:12px;min-width:170px;cursor:pointer}
+  select:hover{border-color:var(--muted)}
+
+  .table{width:100%;border-collapse:collapse;margin-top:28px}
+  .table th{text-align:left;font:9px var(--mono);letter-spacing:.2em;color:var(--dim);text-transform:uppercase;padding:0 10px 12px 0;border-bottom:1px solid var(--line);font-weight:400}
+  .table td{padding:15px 10px 15px 0;border-bottom:1px solid #1c1e20;font-size:13px;vertical-align:middle}
+  .table td.num{font:11px var(--mono);color:var(--dim);width:38px}
+  .table td.slot{font:11px var(--mono);color:var(--muted);width:70px}
+  .table td.act{text-align:right;width:150px;white-space:nowrap}
+  .table .lbl{color:var(--white);display:block}
+  .table .eng{font:10px var(--mono);color:var(--dim);display:block;margin-top:3px;letter-spacing:.08em}
+  .status{display:inline-flex;align-items:center;gap:7px;font:10px var(--mono);letter-spacing:.12em;color:var(--muted)}
+  .status b{width:5px;height:5px;background:var(--white);display:block}
+  .empty{border:1px dashed var(--line);padding:30px;text-align:center;color:var(--dim);font:11px var(--mono);letter-spacing:.1em;margin-top:28px}
+  .addrow{margin-top:30px;padding-top:24px;border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .addrow label{font:10px var(--mono);letter-spacing:.18em;color:var(--dim);text-transform:uppercase;margin-right:6px}
+  .result{margin-top:22px;border:1px solid var(--line);padding:14px 18px;font:11px var(--mono);letter-spacing:.1em;color:var(--muted);display:none}
+  .result.show{display:block}
+  .result.ok{border-color:var(--white);color:var(--white)}
+  .result.bad{color:var(--muted)}
+
+  .side{display:flex;flex-direction:column;min-height:0;background:var(--panel)}
+  .side-head{height:58px;flex:none;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 24px}
+  .side-head span{font:10px var(--mono);letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
+  .dot{width:6px;height:6px;border-radius:50%;background:var(--dim)}
+  .dot.live{background:var(--white);box-shadow:0 0 0 4px rgba(255,255,255,.08)}
+  .log{flex:1;overflow:auto;padding:22px 24px;font:11px/1.65 var(--mono)}
+  .log::-webkit-scrollbar{width:5px}.log::-webkit-scrollbar-thumb{background:#33363a}
+  .row{display:grid;grid-template-columns:52px 1fr;gap:12px;padding:7px 0;border-bottom:1px solid #191b1d;color:var(--muted);animation:in .2s ease-out}
+  @keyframes in{from{opacity:0;transform:translateY(4px)}}
+  .row .t{color:var(--dim)}.row.ok .m,.row.done .m{color:var(--white)}.row.error .m{color:var(--white);text-decoration:underline dotted}
+  .side-foot{flex:none;border-top:1px solid var(--line);padding:14px 24px;font:10px var(--mono);letter-spacing:.1em;color:var(--dim);display:flex;justify-content:space-between}
+
+  @media(max-width:950px){
+    body{overflow:auto}.wrap{grid-template-columns:1fr;height:auto}
+    .hero{border-right:0;border-bottom:1px solid var(--line);padding:40px 24px}
+    .nav{margin-left:24px;gap:16px}.side{min-height:340px}
+  }
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="mark"></span><span>FPRINT</span><span class="sep">/</span><span>5125</span></div>
+    <nav class="nav">
+      <button class="tab active" id="tabManage">管理 / MANAGE</button>
+      <button class="tab" id="tabEnroll">录入 / ENROLL</button>
+    </nav>
+    <div class="badge" id="badge">待机 / STANDBY</div>
+  </header>
+
+  <div class="wrap">
+    <section class="hero">
+      <!-- ENROLL -->
+      <div class="panel" id="enrollPanel">
+        <div class="eyebrow"><i></i>ENROLLMENT CONSOLE · 指纹录入</div>
+        <h1 id="headline">准备录入</h1>
+        <p class="sub">GOODIX 27C6:5125 · TLS-PSK · GOODIX MILAN ENGINE</p>
+        <div class="sensor" id="sensor">
+          <div class="ring"></div><div class="ring r2"></div><div class="ring r3"></div>
+          <div class="core"><svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M32 54c-1.8-6-3-12-3-19 0-8 2-14 6-19"/>
+            <path d="M23 55c-2-7-3-14-3-21 0-10 3-18 9-24"/>
+            <path d="M41 55c2-7 3-14 3-21 0-10-3-18-9-24"/>
+            <path d="M15 52C12 44 11 37 11 29c0-12 5-21 13-27"/>
+            <path d="M49 52c3-8 4-15 4-23 0-12-5-21-13-27"/>
+          </svg></div>
+        </div>
+        <div class="instruction" id="instruction">点击「开始录入」，然后按提示放手指。</div>
+        <div class="hint">平放盖住传感器 · 按住约 1 秒后抬起 · 重复 13 次</div>
+        <div class="finger-chip" id="fingerChip">RIGHT-INDEX-FINGER / 右食指</div>
+        <div class="stages" id="stages"></div>
+        <div class="stage-label" id="stageLabel">STAGE 00 / 13</div>
+        <div class="actions">
+          <button id="start">开始录入</button>
+          <button id="stop" class="ghost">停止</button>
+        </div>
+      </div>
+
+      <!-- MANAGE -->
+      <div class="panel show" id="managePanel">
+        <div class="eyebrow"><i></i>PRINT MANAGEMENT · 指纹管理</div>
+        <h1>已录入指纹</h1>
+        <p class="sub" id="count">0 个模板 · GOODIX MILAN ENGINE</p>
+        <div id="tableWrap"></div>
+        <div class="addrow">
+          <label>新增手指</label>
+          <select id="newFinger"></select>
+          <button id="addBtn">新增录入</button>
+          <button id="refreshBtn" class="ghost">刷新</button>
+        </div>
+        <div class="result" id="result"></div>
+      </div>
+    </section>
+
+    <aside class="side">
+      <div class="side-head"><span>Event stream</span><span class="dot" id="dot"></span></div>
+      <div class="log" id="log"></div>
+      <div class="side-foot"><span>/var/lib/fprint</span><span id="clock">--:--:--</span></div>
+    </aside>
+  </div>
+
+<script>
+const $ = id => document.getElementById(id);
+const FINGERS = {
+  'right-index-finger':'右食指','right-thumb':'右拇指','right-middle-finger':'右中指',
+  'right-ring-finger':'右无名指','right-little-finger':'右小指',
+  'left-index-finger':'左食指','left-thumb':'左拇指','left-middle-finger':'左中指',
+  'left-ring-finger':'左无名指','left-little-finger':'左小指'
+};
+const stages = $('stages');
+for (let i=0;i<13;i++) stages.appendChild(document.createElement('i'));
+for (const [k,v] of Object.entries(FINGERS)) {
+  const o=document.createElement('option'); o.value=k; o.textContent=v+' · '+k; $('newFinger').appendChild(o);
+}
+
+let current = {running:false,op:null,finger:'right-index-finger',stage:0,total:13,prints:[],verify_result:null,log:[]};
+let mode = 'manage';
+
+function tab(which){
+  mode = which;
+  $('tabEnroll').className = 'tab' + (which==='enroll'?' active':'');
+  $('tabManage').className = 'tab' + (which==='manage'?' active':'');
+  $('enrollPanel').className = 'panel' + (which==='enroll'?' show':'');
+  $('managePanel').className = 'panel' + (which==='manage'?' show':'');
+}
+$('tabEnroll').onclick=()=>tab('enroll');
+$('tabManage').onclick=()=>tab('manage');
+
+function renderPrints(prints){
+  $('count').textContent = prints.length + ' 个模板 · GOODIX MILAN ENGINE';
+  if (!prints.length){
+    $('tableWrap').innerHTML = '<div class="empty">NO ENROLLED PRINTS · 尚无指纹模板</div>';
+    return;
+  }
+  let html = '<table class="table"><thead><tr><th>No</th><th>Finger / 手指</th><th>Slot</th><th>Status</th><th></th></tr></thead><tbody>';
+  prints.forEach((p,i)=>{
+    html += '<tr>'
+      + '<td class="num">'+String(i+1).padStart(2,'0')+'</td>'
+      + '<td><span class="lbl"></span><span class="eng"></span></td>'
+      + '<td class="slot">#'+p.slot+'</td>'
+      + '<td><span class="status"><b></b>ACTIVE</span></td>'
+      + '<td class="act"><button class="action" data-op="verify" data-finger="'+p.finger+'">验证</button> '
+      + '<button class="danger" data-op="delete" data-finger="'+p.finger+'">删除</button></td></tr>';
+  });
+  html += '</tbody></table>';
+  $('tableWrap').innerHTML = html;
+  $('tableWrap').querySelectorAll('.lbl').forEach((el,i)=>el.textContent=prints[i].label);
+  $('tableWrap').querySelectorAll('.eng').forEach((el,i)=>el.textContent=prints[i].finger);
+}
+
+function render(s){
+  current = s;
+  const active = !!s.running;
+  $('badge').textContent = active ? (s.op==='verify'?'验证中 / VERIFY':'录入中 / ACTIVE')
+    : (s.kind==='done'?'完成 / COMPLETE':'待机 / STANDBY');
+  $('badge').className='badge'+(active?' live':(s.kind==='done'?' done':''));
+  $('dot').className='dot'+(active?' live':'');
+  $('headline').textContent=s.message||'准备录入';
+  $('instruction').textContent=s.detail||'';
+  $('fingerChip').textContent=(s.finger||'right-index-finger').toUpperCase()+' / '+(FINGERS[s.finger]||'');
+  $('stageLabel').textContent='STAGE '+String(s.stage).padStart(2,'0')+' / '+s.total;
+  [...stages.children].forEach((el,i)=>{el.className=i<s.stage?'on':(i===s.stage&&active&&s.op==='enroll'?'now':'');});
+  $('sensor').className='sensor'+(active&&s.op==='enroll'?' pulse':(s.kind==='done'?' ok':''));
+  $('start').disabled=active; $('stop').disabled=!active;
+  renderPrints(s.prints||[]);
+  const r=$('result');
+  if (s.verify_result){
+    r.className='result show '+(s.verify_result==='match'?'ok':'bad');
+    r.textContent = s.verify_result==='match' ? 'VERIFY MATCH · 指纹匹配成功' : 'VERIFY NO MATCH · 未匹配';
+  } else r.className='result';
+  const log=$('log'); log.innerHTML='';
+  (s.log||[]).slice(-60).forEach(e=>{
+    const row=document.createElement('div'); row.className='row '+(e.kind||'info');
+    row.innerHTML='<span class="t"></span><span class="m"></span>';
+    row.children[0].textContent=e.time; row.children[1].textContent=e.text; log.appendChild(row);
+  });
+  log.scrollTop=log.scrollHeight;
+}
+
+async function api(path, body){
+  const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body||{})});
+  const s=await (await fetch('/state')).json(); render(s); return s;
+}
+function startEnroll(){
+  const f=$('newFinger').value;
+  if(!confirm('开始录入 '+(FINGERS[f]||f)+' ？\n请确认手指与下拉框选择一致。')) return;
+  tab('enroll'); api('/enroll',{finger:f});
+}
+$('start').onclick=startEnroll;
+$('stop').onclick=()=>api('/stop');
+$('refreshBtn').onclick=()=>api('/refresh');
+$('addBtn').onclick=startEnroll;
+$('tableWrap').addEventListener('click',async e=>{
+  const b=e.target.closest('button[data-op]'); if(!b) return;
+  if(b.dataset.op==='verify'){ await api('/verify',{finger:b.dataset.finger}); }
+  else if(b.dataset.op==='delete'){
+    if(!confirm('确认删除 '+(FINGERS[b.dataset.finger]||b.dataset.finger)+' 的指纹模板？')) return;
+    await api('/delete',{finger:b.dataset.finger});
+  }
+});
+
+setInterval(()=>{$('clock').textContent=new Date().toTimeString().slice(0,8);},1000);
+setInterval(()=>fetch('/state').then(r=>r.json()).then(render).catch(()=>{}),5000);
+fetch('/state').then(r=>r.json()).then(s=>{ if(s.running&&s.finger) $('newFinger').value=s.finger; render(s); });
+const es=new EventSource('/events');
+es.onmessage=e=>{
+  try{
+    const ev=JSON.parse(e.data);
+    if(ev.type==='prints'){ current.prints=ev.prints; renderPrints(ev.prints); return; }
+    render(ev);
+  }catch(_){}
+};
+</script>
+</body>
+</html>

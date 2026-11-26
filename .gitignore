@@ -1,0 +1,10 @@
+*.o
+*.swp
+_build
+build/
+engine/
+__pycache__/
+*.pyc
+*.log
+.omo/
+.codegraph
